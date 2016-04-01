@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o"
-  "../../../bin/timerqueue_unittest.pdb"
-  "../../../bin/timerqueue_unittest"
+  "CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o"
+  "timerqueue_unittest.pdb"
+  "timerqueue_unittest"
 )
 
 # Per-language clean rules from dependency scanning.

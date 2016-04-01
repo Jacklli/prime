@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/prime/base/Exception.h
+prime/base/Types.h
+-
+exception
+-
+
+/root/prime/base/Types.h
+stdint.h
+-
+string
+-
+ext/vstring.h
+-
+ext/vstring_fwd.h
+-
+assert.h
+-
+
+/root/prime/base/tests/Exception_test.cc
+prime/base/Exception.h
+-
+stdio.h
+-
+

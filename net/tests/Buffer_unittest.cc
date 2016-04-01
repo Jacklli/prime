@@ -1,12 +1,12 @@
-#include <muduo/net/Buffer.h>
+#include <prime/net/Buffer.h>
 
 //#define BOOST_TEST_MODULE BufferTest
 #define BOOST_TEST_MAIN
 #define BOOST_TEST_DYN_LINK
 #include <boost/test/unit_test.hpp>
 
-using muduo::string;
-using muduo::net::Buffer;
+using prime::string;
+using prime::net::Buffer;
 
 BOOST_AUTO_TEST_CASE(testBufferAppendRetrieve)
 {
@@ -153,7 +153,7 @@ void output(Buffer&& buf, const void* inner)
 BOOST_AUTO_TEST_CASE(testMove)
 {
   Buffer buf;
-  buf.append("muduo", 5);
+  buf.append("prime", 5);
   const void* inner = buf.peek();
   // printf("Buffer at %p, inner %p\n", &buf, inner);
   output(std::move(buf), inner);

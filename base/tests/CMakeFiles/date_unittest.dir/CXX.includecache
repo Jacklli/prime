@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/prime/base/Date.h
+prime/base/copyable.h
+-
+prime/base/Types.h
+-
+
+/root/prime/base/Types.h
+stdint.h
+-
+string
+-
+ext/vstring.h
+-
+ext/vstring_fwd.h
+-
+assert.h
+-
+
+/root/prime/base/copyable.h
+
+/root/prime/base/tests/Date_unittest.cc
+prime/base/Date.h
+-
+assert.h
+-
+stdio.h
+-
+

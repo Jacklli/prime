@@ -1,9 +1,9 @@
-#include <muduo/net/TcpServer.h>
+#include <prime/net/TcpServer.h>
 
-#include <muduo/base/Logging.h>
-#include <muduo/base/Thread.h>
-#include <muduo/net/EventLoop.h>
-#include <muduo/net/InetAddress.h>
+#include <prime/base/Logging.h>
+#include <prime/base/Thread.h>
+#include <prime/net/EventLoop.h>
+#include <prime/net/InetAddress.h>
 
 #include <boost/bind.hpp>
 
@@ -12,8 +12,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 int numThreads = 0;
 

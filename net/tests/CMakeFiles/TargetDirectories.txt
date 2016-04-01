@@ -1,0 +1,7 @@
+/root/prime/net/tests/CMakeFiles/echoclient_unittest.dir
+/root/prime/net/tests/CMakeFiles/echoserver_unittest.dir
+/root/prime/net/tests/CMakeFiles/eventloop_unittest.dir
+/root/prime/net/tests/CMakeFiles/eventloopthread_unittest.dir
+/root/prime/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir
+/root/prime/net/tests/CMakeFiles/tcpclient_reg1.dir
+/root/prime/net/tests/CMakeFiles/timerqueue_unittest.dir

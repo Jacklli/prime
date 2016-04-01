@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/prime/base/FileUtil.h
+prime/base/StringPiece.h
+-
+boost/noncopyable.hpp
+-
+
+/root/prime/base/StringPiece.h
+string.h
+-
+iosfwd
+-
+prime/base/Types.h
+-
+string
+-
+
+/root/prime/base/Types.h
+stdint.h
+-
+string
+-
+ext/vstring.h
+-
+ext/vstring_fwd.h
+-
+assert.h
+-
+
+/root/prime/base/tests/FileUtil_test.cc
+prime/base/FileUtil.h
+-
+stdio.h
+-
+inttypes.h
+-
+

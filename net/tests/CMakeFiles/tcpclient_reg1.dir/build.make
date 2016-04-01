@@ -35,70 +35,68 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/muduo-1.0.0
+CMAKE_SOURCE_DIR = /root/prime/net/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/muduo-1.0.0
+CMAKE_BINARY_DIR = /root/prime/net/tests
 
 # Include any dependencies generated for this target.
-include muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/depend.make
+include CMakeFiles/tcpclient_reg1.dir/depend.make
 
 # Include the progress variables for this target.
-include muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/progress.make
+include CMakeFiles/tcpclient_reg1.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/flags.make
+include CMakeFiles/tcpclient_reg1.dir/flags.make
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/flags.make
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o: muduo/net/tests/TcpClient_reg1.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/muduo-1.0.0/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o -c /root/muduo-1.0.0/muduo/net/tests/TcpClient_reg1.cc
+CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o: CMakeFiles/tcpclient_reg1.dir/flags.make
+CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o: TcpClient_reg1.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/net/tests/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o -c /root/prime/net/tests/TcpClient_reg1.cc
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.i"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/muduo-1.0.0/muduo/net/tests/TcpClient_reg1.cc > CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.i
+CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/net/tests/TcpClient_reg1.cc > CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.i
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.s"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/muduo-1.0.0/muduo/net/tests/TcpClient_reg1.cc -o CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.s
+CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/net/tests/TcpClient_reg1.cc -o CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.s
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o.requires:
-.PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o.requires
+CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o.requires:
+.PHONY : CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o.requires
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o.provides: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o.requires
-	$(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o.provides.build
-.PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o.provides
+CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o.provides: CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o.requires
+	$(MAKE) -f CMakeFiles/tcpclient_reg1.dir/build.make CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o.provides.build
+.PHONY : CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o.provides
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o.provides.build: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o
+CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o.provides.build: CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o
 
 # Object files for target tcpclient_reg1
 tcpclient_reg1_OBJECTS = \
-"CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o"
+"CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o"
 
 # External object files for target tcpclient_reg1
 tcpclient_reg1_EXTERNAL_OBJECTS =
 
-bin/tcpclient_reg1: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o
-bin/tcpclient_reg1: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make
-bin/tcpclient_reg1: lib/libmuduo_net.a
-bin/tcpclient_reg1: lib/libmuduo_base.a
-bin/tcpclient_reg1: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../bin/tcpclient_reg1"
-	cd /root/muduo-1.0.0/muduo/net/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tcpclient_reg1.dir/link.txt --verbose=$(VERBOSE)
+tcpclient_reg1: CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o
+tcpclient_reg1: CMakeFiles/tcpclient_reg1.dir/build.make
+tcpclient_reg1: CMakeFiles/tcpclient_reg1.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable tcpclient_reg1"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tcpclient_reg1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build: bin/tcpclient_reg1
-.PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build
+CMakeFiles/tcpclient_reg1.dir/build: tcpclient_reg1
+.PHONY : CMakeFiles/tcpclient_reg1.dir/build
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/requires: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o.requires
-.PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/requires
+CMakeFiles/tcpclient_reg1.dir/requires: CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o.requires
+.PHONY : CMakeFiles/tcpclient_reg1.dir/requires
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/clean:
-	cd /root/muduo-1.0.0/muduo/net/tests && $(CMAKE_COMMAND) -P CMakeFiles/tcpclient_reg1.dir/cmake_clean.cmake
-.PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/clean
+CMakeFiles/tcpclient_reg1.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/tcpclient_reg1.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/tcpclient_reg1.dir/clean
 
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/depend:
-	cd /root/muduo-1.0.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/muduo-1.0.0 /root/muduo-1.0.0/muduo/net/tests /root/muduo-1.0.0 /root/muduo-1.0.0/muduo/net/tests /root/muduo-1.0.0/muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/depend
+CMakeFiles/tcpclient_reg1.dir/depend:
+	cd /root/prime/net/tests && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests/CMakeFiles/tcpclient_reg1.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/tcpclient_reg1.dir/depend
 

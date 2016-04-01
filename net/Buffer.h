@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -11,11 +11,11 @@
 #ifndef MUDUO_NET_BUFFER_H
 #define MUDUO_NET_BUFFER_H
 
-#include <muduo/base/copyable.h>
-#include <muduo/base/StringPiece.h>
-#include <muduo/base/Types.h>
+#include <prime/base/copyable.h>
+#include <prime/base/StringPiece.h>
+#include <prime/base/Types.h>
 
-#include <muduo/net/Endian.h>
+#include <prime/net/Endian.h>
 
 #include <algorithm>
 #include <vector>
@@ -24,7 +24,7 @@
 #include <string.h>
 //#include <unistd.h>  // ssize_t
 
-namespace muduo
+namespace prime
 {
 namespace net
 {
@@ -39,7 +39,7 @@ namespace net
 /// |                   |                  |                  |
 /// 0      <=      readerIndex   <=   writerIndex    <=     size
 /// @endcode
-class Buffer : public muduo::copyable
+class Buffer : public prime::copyable
 {
  public:
   static const size_t kCheapPrepend = 8;

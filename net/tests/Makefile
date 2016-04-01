@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/muduo-1.0.0
+CMAKE_SOURCE_DIR = /root/prime/net/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/muduo-1.0.0
+CMAKE_BINARY_DIR = /root/prime/net/tests
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -57,47 +57,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -110,14 +69,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/muduo-1.0.0 && $(CMAKE_COMMAND) -E cmake_progress_start /root/muduo-1.0.0/CMakeFiles /root/muduo-1.0.0/muduo/net/tests/CMakeFiles/progress.marks
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/muduo-1.0.0/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/net/tests/CMakeFiles /root/prime/net/tests/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/net/tests/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -126,377 +85,214 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/muduo-1.0.0 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule
+#=============================================================================
+# Target rules for targets named echoclient_unittest
 
-# Convenience name for target.
-buffer_cpp11_unittest: muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule
-.PHONY : buffer_cpp11_unittest
-
-# fast build rule for target.
-buffer_cpp11_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build
-.PHONY : buffer_cpp11_unittest/fast
-
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule
-
-# Convenience name for target.
-buffer_unittest: muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule
-.PHONY : buffer_unittest
-
-# fast build rule for target.
-buffer_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/build
-.PHONY : buffer_unittest/fast
-
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule
-
-# Convenience name for target.
-echoclient_unittest: muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule
+# Build rule for target.
+echoclient_unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echoclient_unittest
 .PHONY : echoclient_unittest
 
 # fast build rule for target.
 echoclient_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build
+	$(MAKE) -f CMakeFiles/echoclient_unittest.dir/build.make CMakeFiles/echoclient_unittest.dir/build
 .PHONY : echoclient_unittest/fast
 
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule
+#=============================================================================
+# Target rules for targets named echoserver_unittest
 
-# Convenience name for target.
-echoserver_unittest: muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule
+# Build rule for target.
+echoserver_unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echoserver_unittest
 .PHONY : echoserver_unittest
 
 # fast build rule for target.
 echoserver_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build
+	$(MAKE) -f CMakeFiles/echoserver_unittest.dir/build.make CMakeFiles/echoserver_unittest.dir/build
 .PHONY : echoserver_unittest/fast
 
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule
+#=============================================================================
+# Target rules for targets named eventloop_unittest
 
-# Convenience name for target.
-eventloop_unittest: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule
+# Build rule for target.
+eventloop_unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eventloop_unittest
 .PHONY : eventloop_unittest
 
 # fast build rule for target.
 eventloop_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build
+	$(MAKE) -f CMakeFiles/eventloop_unittest.dir/build.make CMakeFiles/eventloop_unittest.dir/build
 .PHONY : eventloop_unittest/fast
 
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/rule
+#=============================================================================
+# Target rules for targets named eventloopthread_unittest
 
-# Convenience name for target.
-eventloopthread_unittest: muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/rule
+# Build rule for target.
+eventloopthread_unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eventloopthread_unittest
 .PHONY : eventloopthread_unittest
 
 # fast build rule for target.
 eventloopthread_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build
+	$(MAKE) -f CMakeFiles/eventloopthread_unittest.dir/build.make CMakeFiles/eventloopthread_unittest.dir/build
 .PHONY : eventloopthread_unittest/fast
 
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/rule
+#=============================================================================
+# Target rules for targets named eventloopthreadpool_unittest
 
-# Convenience name for target.
-eventloopthreadpool_unittest: muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/rule
+# Build rule for target.
+eventloopthreadpool_unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eventloopthreadpool_unittest
 .PHONY : eventloopthreadpool_unittest
 
 # fast build rule for target.
 eventloopthreadpool_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build
+	$(MAKE) -f CMakeFiles/eventloopthreadpool_unittest.dir/build.make CMakeFiles/eventloopthreadpool_unittest.dir/build
 .PHONY : eventloopthreadpool_unittest/fast
 
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule
+#=============================================================================
+# Target rules for targets named tcpclient_reg1
 
-# Convenience name for target.
-inetaddress_unittest: muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule
-.PHONY : inetaddress_unittest
-
-# fast build rule for target.
-inetaddress_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build
-.PHONY : inetaddress_unittest/fast
-
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule
-
-# Convenience name for target.
-tcpclient_reg1: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule
+# Build rule for target.
+tcpclient_reg1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcpclient_reg1
 .PHONY : tcpclient_reg1
 
 # fast build rule for target.
 tcpclient_reg1/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build
+	$(MAKE) -f CMakeFiles/tcpclient_reg1.dir/build.make CMakeFiles/tcpclient_reg1.dir/build
 .PHONY : tcpclient_reg1/fast
 
-# Convenience name for target.
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule:
-	cd /root/muduo-1.0.0 && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule
-.PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule
+#=============================================================================
+# Target rules for targets named timerqueue_unittest
 
-# Convenience name for target.
-timerqueue_unittest: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule
+# Build rule for target.
+timerqueue_unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 timerqueue_unittest
 .PHONY : timerqueue_unittest
 
 # fast build rule for target.
 timerqueue_unittest/fast:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build
+	$(MAKE) -f CMakeFiles/timerqueue_unittest.dir/build.make CMakeFiles/timerqueue_unittest.dir/build
 .PHONY : timerqueue_unittest/fast
 
-Buffer_unittest.o: Buffer_unittest.cc.o
-.PHONY : Buffer_unittest.o
-
 # target to build an object file
-Buffer_unittest.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.o
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.o
-.PHONY : Buffer_unittest.cc.o
-
-Buffer_unittest.i: Buffer_unittest.cc.i
-.PHONY : Buffer_unittest.i
-
-# target to preprocess a source file
-Buffer_unittest.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.i
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.i
-.PHONY : Buffer_unittest.cc.i
-
-Buffer_unittest.s: Buffer_unittest.cc.s
-.PHONY : Buffer_unittest.s
-
-# target to generate assembly for a file
-Buffer_unittest.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.s
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.s
-.PHONY : Buffer_unittest.cc.s
-
-EchoClient_unittest.o: EchoClient_unittest.cc.o
+EchoClient_unittest.o:
+	$(MAKE) -f CMakeFiles/echoclient_unittest.dir/build.make CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.o
 .PHONY : EchoClient_unittest.o
 
-# target to build an object file
-EchoClient_unittest.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.o
-.PHONY : EchoClient_unittest.cc.o
-
-EchoClient_unittest.i: EchoClient_unittest.cc.i
+# target to preprocess a source file
+EchoClient_unittest.i:
+	$(MAKE) -f CMakeFiles/echoclient_unittest.dir/build.make CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.i
 .PHONY : EchoClient_unittest.i
 
-# target to preprocess a source file
-EchoClient_unittest.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.i
-.PHONY : EchoClient_unittest.cc.i
-
-EchoClient_unittest.s: EchoClient_unittest.cc.s
+# target to generate assembly for a file
+EchoClient_unittest.s:
+	$(MAKE) -f CMakeFiles/echoclient_unittest.dir/build.make CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.s
 .PHONY : EchoClient_unittest.s
 
-# target to generate assembly for a file
-EchoClient_unittest.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.s
-.PHONY : EchoClient_unittest.cc.s
-
-EchoServer_unittest.o: EchoServer_unittest.cc.o
+# target to build an object file
+EchoServer_unittest.o:
+	$(MAKE) -f CMakeFiles/echoserver_unittest.dir/build.make CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.o
 .PHONY : EchoServer_unittest.o
 
-# target to build an object file
-EchoServer_unittest.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.o
-.PHONY : EchoServer_unittest.cc.o
-
-EchoServer_unittest.i: EchoServer_unittest.cc.i
+# target to preprocess a source file
+EchoServer_unittest.i:
+	$(MAKE) -f CMakeFiles/echoserver_unittest.dir/build.make CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.i
 .PHONY : EchoServer_unittest.i
 
-# target to preprocess a source file
-EchoServer_unittest.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.i
-.PHONY : EchoServer_unittest.cc.i
-
-EchoServer_unittest.s: EchoServer_unittest.cc.s
+# target to generate assembly for a file
+EchoServer_unittest.s:
+	$(MAKE) -f CMakeFiles/echoserver_unittest.dir/build.make CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.s
 .PHONY : EchoServer_unittest.s
 
-# target to generate assembly for a file
-EchoServer_unittest.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.s
-.PHONY : EchoServer_unittest.cc.s
-
-EventLoopThreadPool_unittest.o: EventLoopThreadPool_unittest.cc.o
+# target to build an object file
+EventLoopThreadPool_unittest.o:
+	$(MAKE) -f CMakeFiles/eventloopthreadpool_unittest.dir/build.make CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.o
 .PHONY : EventLoopThreadPool_unittest.o
 
-# target to build an object file
-EventLoopThreadPool_unittest.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.o
-.PHONY : EventLoopThreadPool_unittest.cc.o
-
-EventLoopThreadPool_unittest.i: EventLoopThreadPool_unittest.cc.i
+# target to preprocess a source file
+EventLoopThreadPool_unittest.i:
+	$(MAKE) -f CMakeFiles/eventloopthreadpool_unittest.dir/build.make CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.i
 .PHONY : EventLoopThreadPool_unittest.i
 
-# target to preprocess a source file
-EventLoopThreadPool_unittest.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.i
-.PHONY : EventLoopThreadPool_unittest.cc.i
-
-EventLoopThreadPool_unittest.s: EventLoopThreadPool_unittest.cc.s
+# target to generate assembly for a file
+EventLoopThreadPool_unittest.s:
+	$(MAKE) -f CMakeFiles/eventloopthreadpool_unittest.dir/build.make CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.s
 .PHONY : EventLoopThreadPool_unittest.s
 
-# target to generate assembly for a file
-EventLoopThreadPool_unittest.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.s
-.PHONY : EventLoopThreadPool_unittest.cc.s
-
-EventLoopThread_unittest.o: EventLoopThread_unittest.cc.o
+# target to build an object file
+EventLoopThread_unittest.o:
+	$(MAKE) -f CMakeFiles/eventloopthread_unittest.dir/build.make CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.o
 .PHONY : EventLoopThread_unittest.o
 
-# target to build an object file
-EventLoopThread_unittest.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.o
-.PHONY : EventLoopThread_unittest.cc.o
-
-EventLoopThread_unittest.i: EventLoopThread_unittest.cc.i
+# target to preprocess a source file
+EventLoopThread_unittest.i:
+	$(MAKE) -f CMakeFiles/eventloopthread_unittest.dir/build.make CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.i
 .PHONY : EventLoopThread_unittest.i
 
-# target to preprocess a source file
-EventLoopThread_unittest.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.i
-.PHONY : EventLoopThread_unittest.cc.i
-
-EventLoopThread_unittest.s: EventLoopThread_unittest.cc.s
+# target to generate assembly for a file
+EventLoopThread_unittest.s:
+	$(MAKE) -f CMakeFiles/eventloopthread_unittest.dir/build.make CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.s
 .PHONY : EventLoopThread_unittest.s
 
-# target to generate assembly for a file
-EventLoopThread_unittest.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.s
-.PHONY : EventLoopThread_unittest.cc.s
-
-EventLoop_unittest.o: EventLoop_unittest.cc.o
+# target to build an object file
+EventLoop_unittest.o:
+	$(MAKE) -f CMakeFiles/eventloop_unittest.dir/build.make CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o
 .PHONY : EventLoop_unittest.o
 
-# target to build an object file
-EventLoop_unittest.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o
-.PHONY : EventLoop_unittest.cc.o
-
-EventLoop_unittest.i: EventLoop_unittest.cc.i
+# target to preprocess a source file
+EventLoop_unittest.i:
+	$(MAKE) -f CMakeFiles/eventloop_unittest.dir/build.make CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.i
 .PHONY : EventLoop_unittest.i
 
-# target to preprocess a source file
-EventLoop_unittest.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.i
-.PHONY : EventLoop_unittest.cc.i
-
-EventLoop_unittest.s: EventLoop_unittest.cc.s
+# target to generate assembly for a file
+EventLoop_unittest.s:
+	$(MAKE) -f CMakeFiles/eventloop_unittest.dir/build.make CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.s
 .PHONY : EventLoop_unittest.s
 
-# target to generate assembly for a file
-EventLoop_unittest.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.s
-.PHONY : EventLoop_unittest.cc.s
-
-InetAddress_unittest.o: InetAddress_unittest.cc.o
-.PHONY : InetAddress_unittest.o
-
 # target to build an object file
-InetAddress_unittest.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.o
-.PHONY : InetAddress_unittest.cc.o
-
-InetAddress_unittest.i: InetAddress_unittest.cc.i
-.PHONY : InetAddress_unittest.i
-
-# target to preprocess a source file
-InetAddress_unittest.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.i
-.PHONY : InetAddress_unittest.cc.i
-
-InetAddress_unittest.s: InetAddress_unittest.cc.s
-.PHONY : InetAddress_unittest.s
-
-# target to generate assembly for a file
-InetAddress_unittest.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.s
-.PHONY : InetAddress_unittest.cc.s
-
-TcpClient_reg1.o: TcpClient_reg1.cc.o
+TcpClient_reg1.o:
+	$(MAKE) -f CMakeFiles/tcpclient_reg1.dir/build.make CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o
 .PHONY : TcpClient_reg1.o
 
-# target to build an object file
-TcpClient_reg1.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o
-.PHONY : TcpClient_reg1.cc.o
-
-TcpClient_reg1.i: TcpClient_reg1.cc.i
+# target to preprocess a source file
+TcpClient_reg1.i:
+	$(MAKE) -f CMakeFiles/tcpclient_reg1.dir/build.make CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.i
 .PHONY : TcpClient_reg1.i
 
-# target to preprocess a source file
-TcpClient_reg1.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.i
-.PHONY : TcpClient_reg1.cc.i
-
-TcpClient_reg1.s: TcpClient_reg1.cc.s
+# target to generate assembly for a file
+TcpClient_reg1.s:
+	$(MAKE) -f CMakeFiles/tcpclient_reg1.dir/build.make CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.s
 .PHONY : TcpClient_reg1.s
 
-# target to generate assembly for a file
-TcpClient_reg1.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.s
-.PHONY : TcpClient_reg1.cc.s
-
-TimerQueue_unittest.o: TimerQueue_unittest.cc.o
+# target to build an object file
+TimerQueue_unittest.o:
+	$(MAKE) -f CMakeFiles/timerqueue_unittest.dir/build.make CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o
 .PHONY : TimerQueue_unittest.o
 
-# target to build an object file
-TimerQueue_unittest.cc.o:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o
-.PHONY : TimerQueue_unittest.cc.o
-
-TimerQueue_unittest.i: TimerQueue_unittest.cc.i
+# target to preprocess a source file
+TimerQueue_unittest.i:
+	$(MAKE) -f CMakeFiles/timerqueue_unittest.dir/build.make CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.i
 .PHONY : TimerQueue_unittest.i
 
-# target to preprocess a source file
-TimerQueue_unittest.cc.i:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.i
-.PHONY : TimerQueue_unittest.cc.i
-
-TimerQueue_unittest.s: TimerQueue_unittest.cc.s
-.PHONY : TimerQueue_unittest.s
-
 # target to generate assembly for a file
-TimerQueue_unittest.cc.s:
-	cd /root/muduo-1.0.0 && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.s
-.PHONY : TimerQueue_unittest.cc.s
+TimerQueue_unittest.s:
+	$(MAKE) -f CMakeFiles/timerqueue_unittest.dir/build.make CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.s
+.PHONY : TimerQueue_unittest.s
 
 # Help Target
 help:
@@ -504,25 +300,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... buffer_cpp11_unittest"
-	@echo "... buffer_unittest"
 	@echo "... echoclient_unittest"
 	@echo "... echoserver_unittest"
 	@echo "... edit_cache"
 	@echo "... eventloop_unittest"
 	@echo "... eventloopthread_unittest"
 	@echo "... eventloopthreadpool_unittest"
-	@echo "... inetaddress_unittest"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... tcpclient_reg1"
 	@echo "... timerqueue_unittest"
-	@echo "... Buffer_unittest.o"
-	@echo "... Buffer_unittest.i"
-	@echo "... Buffer_unittest.s"
 	@echo "... EchoClient_unittest.o"
 	@echo "... EchoClient_unittest.i"
 	@echo "... EchoClient_unittest.s"
@@ -538,9 +324,6 @@ help:
 	@echo "... EventLoop_unittest.o"
 	@echo "... EventLoop_unittest.i"
 	@echo "... EventLoop_unittest.s"
-	@echo "... InetAddress_unittest.o"
-	@echo "... InetAddress_unittest.i"
-	@echo "... InetAddress_unittest.s"
 	@echo "... TcpClient_reg1.o"
 	@echo "... TcpClient_reg1.i"
 	@echo "... TcpClient_reg1.s"
@@ -558,6 +341,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/muduo-1.0.0 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

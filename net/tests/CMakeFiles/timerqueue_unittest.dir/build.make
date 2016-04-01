@@ -35,70 +35,68 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/muduo-1.0.0
+CMAKE_SOURCE_DIR = /root/prime/net/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/muduo-1.0.0
+CMAKE_BINARY_DIR = /root/prime/net/tests
 
 # Include any dependencies generated for this target.
-include muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/depend.make
+include CMakeFiles/timerqueue_unittest.dir/depend.make
 
 # Include the progress variables for this target.
-include muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/progress.make
+include CMakeFiles/timerqueue_unittest.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/flags.make
+include CMakeFiles/timerqueue_unittest.dir/flags.make
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/flags.make
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o: muduo/net/tests/TimerQueue_unittest.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/muduo-1.0.0/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o -c /root/muduo-1.0.0/muduo/net/tests/TimerQueue_unittest.cc
+CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o: CMakeFiles/timerqueue_unittest.dir/flags.make
+CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o: TimerQueue_unittest.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/net/tests/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o -c /root/prime/net/tests/TimerQueue_unittest.cc
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.i"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/muduo-1.0.0/muduo/net/tests/TimerQueue_unittest.cc > CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.i
+CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/net/tests/TimerQueue_unittest.cc > CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.i
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.s"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/muduo-1.0.0/muduo/net/tests/TimerQueue_unittest.cc -o CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.s
+CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/net/tests/TimerQueue_unittest.cc -o CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.s
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o.requires:
-.PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o.requires
+CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o.requires:
+.PHONY : CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o.requires
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o.provides: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o.requires
-	$(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o.provides.build
-.PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o.provides
+CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o.provides: CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o.requires
+	$(MAKE) -f CMakeFiles/timerqueue_unittest.dir/build.make CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o.provides.build
+.PHONY : CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o.provides
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o.provides.build: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o
+CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o.provides.build: CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o
 
 # Object files for target timerqueue_unittest
 timerqueue_unittest_OBJECTS = \
-"CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o"
+"CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o"
 
 # External object files for target timerqueue_unittest
 timerqueue_unittest_EXTERNAL_OBJECTS =
 
-bin/timerqueue_unittest: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o
-bin/timerqueue_unittest: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make
-bin/timerqueue_unittest: lib/libmuduo_net.a
-bin/timerqueue_unittest: lib/libmuduo_base.a
-bin/timerqueue_unittest: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../bin/timerqueue_unittest"
-	cd /root/muduo-1.0.0/muduo/net/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/timerqueue_unittest.dir/link.txt --verbose=$(VERBOSE)
+timerqueue_unittest: CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o
+timerqueue_unittest: CMakeFiles/timerqueue_unittest.dir/build.make
+timerqueue_unittest: CMakeFiles/timerqueue_unittest.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable timerqueue_unittest"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/timerqueue_unittest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build: bin/timerqueue_unittest
-.PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build
+CMakeFiles/timerqueue_unittest.dir/build: timerqueue_unittest
+.PHONY : CMakeFiles/timerqueue_unittest.dir/build
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/requires: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o.requires
-.PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/requires
+CMakeFiles/timerqueue_unittest.dir/requires: CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o.requires
+.PHONY : CMakeFiles/timerqueue_unittest.dir/requires
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/clean:
-	cd /root/muduo-1.0.0/muduo/net/tests && $(CMAKE_COMMAND) -P CMakeFiles/timerqueue_unittest.dir/cmake_clean.cmake
-.PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/clean
+CMakeFiles/timerqueue_unittest.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/timerqueue_unittest.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/timerqueue_unittest.dir/clean
 
-muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/depend:
-	cd /root/muduo-1.0.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/muduo-1.0.0 /root/muduo-1.0.0/muduo/net/tests /root/muduo-1.0.0 /root/muduo-1.0.0/muduo/net/tests /root/muduo-1.0.0/muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/depend
+CMakeFiles/timerqueue_unittest.dir/depend:
+	cd /root/prime/net/tests && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests/CMakeFiles/timerqueue_unittest.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/timerqueue_unittest.dir/depend
 

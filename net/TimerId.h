@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -11,9 +11,9 @@
 #ifndef MUDUO_NET_TIMERID_H
 #define MUDUO_NET_TIMERID_H
 
-#include <muduo/base/copyable.h>
+#include <prime/base/copyable.h>
 
-namespace muduo
+namespace prime
 {
 namespace net
 {
@@ -23,7 +23,7 @@ class Timer;
 ///
 /// An opaque identifier, for canceling Timer.
 ///
-class TimerId : public muduo::copyable
+class TimerId : public prime::copyable
 {
  public:
   TimerId()

@@ -1,20 +1,20 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-#include <muduo/net/EventLoopThreadPool.h>
+#include <prime/net/EventLoopThreadPool.h>
 
-#include <muduo/net/EventLoop.h>
-#include <muduo/net/EventLoopThread.h>
+#include <prime/net/EventLoop.h>
+#include <prime/net/EventLoopThread.h>
 
 #include <boost/bind.hpp>
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 
 EventLoopThreadPool::EventLoopThreadPool(EventLoop* baseLoop)

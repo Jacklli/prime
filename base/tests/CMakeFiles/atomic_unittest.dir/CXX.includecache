@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/prime/base/Atomic.h
+boost/noncopyable.hpp
+-
+stdint.h
+-
+
+/root/prime/base/tests/Atomic_unittest.cc
+prime/base/Atomic.h
+-
+assert.h
+-
+

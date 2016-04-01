@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.o"
-  "../../../bin/eventloopthread_unittest.pdb"
-  "../../../bin/eventloopthread_unittest"
+  "CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.o"
+  "eventloopthread_unittest.pdb"
+  "eventloopthread_unittest"
 )
 
 # Per-language clean rules from dependency scanning.

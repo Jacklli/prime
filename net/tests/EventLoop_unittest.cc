@@ -1,5 +1,5 @@
-#include <muduo/net/EventLoop.h>
-#include <muduo/base/Thread.h>
+#include <prime/net/EventLoop.h>
+#include <prime/base/Thread.h>
 
 #include <boost/bind.hpp>
 
@@ -7,8 +7,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 EventLoop* g_loop;
 

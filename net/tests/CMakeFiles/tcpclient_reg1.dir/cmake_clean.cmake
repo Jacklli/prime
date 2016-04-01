@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o"
-  "../../../bin/tcpclient_reg1.pdb"
-  "../../../bin/tcpclient_reg1"
+  "CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o"
+  "tcpclient_reg1.pdb"
+  "tcpclient_reg1"
 )
 
 # Per-language clean rules from dependency scanning.

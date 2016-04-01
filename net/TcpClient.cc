@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -7,19 +7,19 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 
-#include <muduo/net/TcpClient.h>
+#include <prime/net/TcpClient.h>
 
-#include <muduo/base/Logging.h>
-#include <muduo/net/Connector.h>
-#include <muduo/net/EventLoop.h>
-#include <muduo/net/SocketsOps.h>
+#include <prime/base/Logging.h>
+#include <prime/net/Connector.h>
+#include <prime/net/EventLoop.h>
+#include <prime/net/SocketsOps.h>
 
 #include <boost/bind.hpp>
 
 #include <stdio.h>  // snprintf
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 // TcpClient::TcpClient(EventLoop* loop)
 //   : loop_(loop)
@@ -32,7 +32,7 @@ using namespace muduo::net;
 // {
 // }
 
-namespace muduo
+namespace prime
 {
 namespace net
 {

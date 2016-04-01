@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/prime/base/TimeZone.h
+prime/base/copyable.h
+-
+boost/shared_ptr.hpp
+-
+time.h
+-
+
+/root/prime/base/copyable.h
+
+/root/prime/base/tests/TimeZone_unittest.cc
+prime/base/TimeZone.h
+-
+assert.h
+-
+stdio.h
+-
+string.h
+-
+strings.h
+-
+

@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -11,12 +11,12 @@
 #ifndef MUDUO_NET_INETADDRESS_H
 #define MUDUO_NET_INETADDRESS_H
 
-#include <muduo/base/copyable.h>
-#include <muduo/base/StringPiece.h>
+#include <prime/base/copyable.h>
+#include <prime/base/StringPiece.h>
 
 #include <netinet/in.h>
 
-namespace muduo
+namespace prime
 {
 namespace net
 {
@@ -25,7 +25,7 @@ namespace net
 /// Wrapper of sockaddr_in.
 ///
 /// This is an POD interface class.
-class InetAddress : public muduo::copyable
+class InetAddress : public prime::copyable
 {
  public:
   /// Constructs an endpoint with given port number.

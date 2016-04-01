@@ -1,25 +1,25 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-#include <muduo/net/TcpServer.h>
+#include <prime/net/TcpServer.h>
 
-#include <muduo/base/Logging.h>
-#include <muduo/net/Acceptor.h>
-#include <muduo/net/EventLoop.h>
-#include <muduo/net/EventLoopThreadPool.h>
-#include <muduo/net/SocketsOps.h>
+#include <prime/base/Logging.h>
+#include <prime/net/Acceptor.h>
+#include <prime/net/EventLoop.h>
+#include <prime/net/EventLoopThreadPool.h>
+#include <prime/net/SocketsOps.h>
 
 #include <boost/bind.hpp>
 
 #include <stdio.h>  // snprintf
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 TcpServer::TcpServer(EventLoop* loop,
                      const InetAddress& listenAddr,

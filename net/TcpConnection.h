@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -11,11 +11,11 @@
 #ifndef MUDUO_NET_TCPCONNECTION_H
 #define MUDUO_NET_TCPCONNECTION_H
 
-#include <muduo/base/StringPiece.h>
-#include <muduo/base/Types.h>
-#include <muduo/net/Callbacks.h>
-#include <muduo/net/Buffer.h>
-#include <muduo/net/InetAddress.h>
+#include <prime/base/StringPiece.h>
+#include <prime/base/Types.h>
+#include <prime/net/Callbacks.h>
+#include <prime/net/Buffer.h>
+#include <prime/net/InetAddress.h>
 
 #include <boost/any.hpp>
 #include <boost/enable_shared_from_this.hpp>
@@ -23,7 +23,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <boost/shared_ptr.hpp>
 
-namespace muduo
+namespace prime
 {
 namespace net
 {

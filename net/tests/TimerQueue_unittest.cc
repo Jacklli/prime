@@ -1,14 +1,14 @@
-#include <muduo/net/EventLoop.h>
-#include <muduo/net/EventLoopThread.h>
-#include <muduo/base/Thread.h>
+#include <prime/net/EventLoop.h>
+#include <prime/net/EventLoopThread.h>
+#include <prime/base/Thread.h>
 
 #include <boost/bind.hpp>
 
 #include <stdio.h>
 #include <unistd.h>
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 int cnt = 0;
 EventLoop* g_loop;

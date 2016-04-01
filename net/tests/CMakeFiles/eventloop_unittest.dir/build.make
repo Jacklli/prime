@@ -35,70 +35,68 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/muduo-1.0.0
+CMAKE_SOURCE_DIR = /root/prime/net/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/muduo-1.0.0
+CMAKE_BINARY_DIR = /root/prime/net/tests
 
 # Include any dependencies generated for this target.
-include muduo/net/tests/CMakeFiles/eventloop_unittest.dir/depend.make
+include CMakeFiles/eventloop_unittest.dir/depend.make
 
 # Include the progress variables for this target.
-include muduo/net/tests/CMakeFiles/eventloop_unittest.dir/progress.make
+include CMakeFiles/eventloop_unittest.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include muduo/net/tests/CMakeFiles/eventloop_unittest.dir/flags.make
+include CMakeFiles/eventloop_unittest.dir/flags.make
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/flags.make
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o: muduo/net/tests/EventLoop_unittest.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/muduo-1.0.0/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o -c /root/muduo-1.0.0/muduo/net/tests/EventLoop_unittest.cc
+CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o: CMakeFiles/eventloop_unittest.dir/flags.make
+CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o: EventLoop_unittest.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/net/tests/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o -c /root/prime/net/tests/EventLoop_unittest.cc
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.i"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/muduo-1.0.0/muduo/net/tests/EventLoop_unittest.cc > CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.i
+CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/net/tests/EventLoop_unittest.cc > CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.i
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.s"
-	cd /root/muduo-1.0.0/muduo/net/tests && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/muduo-1.0.0/muduo/net/tests/EventLoop_unittest.cc -o CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.s
+CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/net/tests/EventLoop_unittest.cc -o CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.s
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o.requires:
-.PHONY : muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o.requires
+CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o.requires:
+.PHONY : CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o.requires
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o.provides: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o.requires
-	$(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o.provides.build
-.PHONY : muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o.provides
+CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o.provides: CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o.requires
+	$(MAKE) -f CMakeFiles/eventloop_unittest.dir/build.make CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o.provides.build
+.PHONY : CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o.provides
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o.provides.build: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o
+CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o.provides.build: CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o
 
 # Object files for target eventloop_unittest
 eventloop_unittest_OBJECTS = \
-"CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o"
+"CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o"
 
 # External object files for target eventloop_unittest
 eventloop_unittest_EXTERNAL_OBJECTS =
 
-bin/eventloop_unittest: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o
-bin/eventloop_unittest: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make
-bin/eventloop_unittest: lib/libmuduo_net.a
-bin/eventloop_unittest: lib/libmuduo_base.a
-bin/eventloop_unittest: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../bin/eventloop_unittest"
-	cd /root/muduo-1.0.0/muduo/net/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/eventloop_unittest.dir/link.txt --verbose=$(VERBOSE)
+eventloop_unittest: CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o
+eventloop_unittest: CMakeFiles/eventloop_unittest.dir/build.make
+eventloop_unittest: CMakeFiles/eventloop_unittest.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable eventloop_unittest"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/eventloop_unittest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build: bin/eventloop_unittest
-.PHONY : muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build
+CMakeFiles/eventloop_unittest.dir/build: eventloop_unittest
+.PHONY : CMakeFiles/eventloop_unittest.dir/build
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/requires: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o.requires
-.PHONY : muduo/net/tests/CMakeFiles/eventloop_unittest.dir/requires
+CMakeFiles/eventloop_unittest.dir/requires: CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.o.requires
+.PHONY : CMakeFiles/eventloop_unittest.dir/requires
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/clean:
-	cd /root/muduo-1.0.0/muduo/net/tests && $(CMAKE_COMMAND) -P CMakeFiles/eventloop_unittest.dir/cmake_clean.cmake
-.PHONY : muduo/net/tests/CMakeFiles/eventloop_unittest.dir/clean
+CMakeFiles/eventloop_unittest.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/eventloop_unittest.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/eventloop_unittest.dir/clean
 
-muduo/net/tests/CMakeFiles/eventloop_unittest.dir/depend:
-	cd /root/muduo-1.0.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/muduo-1.0.0 /root/muduo-1.0.0/muduo/net/tests /root/muduo-1.0.0 /root/muduo-1.0.0/muduo/net/tests /root/muduo-1.0.0/muduo/net/tests/CMakeFiles/eventloop_unittest.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : muduo/net/tests/CMakeFiles/eventloop_unittest.dir/depend
+CMakeFiles/eventloop_unittest.dir/depend:
+	cd /root/prime/net/tests && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests /root/prime/net/tests/CMakeFiles/eventloop_unittest.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/eventloop_unittest.dir/depend
 

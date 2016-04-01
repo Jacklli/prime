@@ -1,23 +1,23 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-#include <muduo/net/poller/PollPoller.h>
+#include <prime/net/poller/PollPoller.h>
 
-#include <muduo/base/Logging.h>
-#include <muduo/base/Types.h>
-#include <muduo/net/Channel.h>
+#include <prime/base/Logging.h>
+#include <prime/base/Types.h>
+#include <prime/net/Channel.h>
 
 #include <assert.h>
 #include <errno.h>
 #include <poll.h>
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 PollPoller::PollPoller(EventLoop* loop)
   : Poller(loop)

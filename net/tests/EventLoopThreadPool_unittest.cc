@@ -1,13 +1,13 @@
-#include <muduo/net/EventLoopThreadPool.h>
-#include <muduo/net/EventLoop.h>
-#include <muduo/base/Thread.h>
+#include <prime/net/EventLoopThreadPool.h>
+#include <prime/net/EventLoop.h>
+#include <prime/base/Thread.h>
 
 #include <boost/bind.hpp>
 
 #include <stdio.h>
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 void print(EventLoop* p = NULL)
 {

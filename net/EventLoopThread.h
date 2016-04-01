@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -11,13 +11,13 @@
 #ifndef MUDUO_NET_EVENTLOOPTHREAD_H
 #define MUDUO_NET_EVENTLOOPTHREAD_H
 
-#include <muduo/base/Condition.h>
-#include <muduo/base/Mutex.h>
-#include <muduo/base/Thread.h>
+#include <prime/base/Condition.h>
+#include <prime/base/Mutex.h>
+#include <prime/base/Thread.h>
 
 #include <boost/noncopyable.hpp>
 
-namespace muduo
+namespace prime
 {
 namespace net
 {

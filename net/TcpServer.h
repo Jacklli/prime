@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -11,15 +11,15 @@
 #ifndef MUDUO_NET_TCPSERVER_H
 #define MUDUO_NET_TCPSERVER_H
 
-#include <muduo/base/Atomic.h>
-#include <muduo/base/Types.h>
-#include <muduo/net/TcpConnection.h>
+#include <prime/base/Atomic.h>
+#include <prime/base/Types.h>
+#include <prime/net/TcpConnection.h>
 
 #include <map>
 #include <boost/noncopyable.hpp>
 #include <boost/scoped_ptr.hpp>
 
-namespace muduo
+namespace prime
 {
 namespace net
 {

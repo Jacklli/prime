@@ -1,14 +1,14 @@
-#include <muduo/net/InetAddress.h>
+#include <prime/net/InetAddress.h>
 
-#include <muduo/base/Logging.h>
+#include <prime/base/Logging.h>
 
 //#define BOOST_TEST_MODULE InetAddressTest
 #define BOOST_TEST_MAIN
 #define BOOST_TEST_DYN_LINK
 #include <boost/test/unit_test.hpp>
 
-using muduo::string;
-using muduo::net::InetAddress;
+using prime::string;
+using prime::net::InetAddress;
 
 BOOST_AUTO_TEST_CASE(testInetAddress)
 {

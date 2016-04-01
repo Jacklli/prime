@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -14,13 +14,13 @@
 #include <boost/function.hpp>
 #include <boost/shared_ptr.hpp>
 
-#include <muduo/base/Timestamp.h>
+#include <prime/base/Timestamp.h>
 
-namespace muduo
+namespace prime
 {
 
 // Adapted from google-protobuf stubs/common.h
-// see License in muduo/base/Types.h
+// see License in prime/base/Types.h
 template<typename To, typename From>
 inline ::boost::shared_ptr<To> down_pointer_cast(const ::boost::shared_ptr<From>& f) {
   if (false) {

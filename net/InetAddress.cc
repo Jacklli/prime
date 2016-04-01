@@ -1,16 +1,16 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-#include <muduo/net/InetAddress.h>
+#include <prime/net/InetAddress.h>
 
-#include <muduo/base/Logging.h>
-#include <muduo/net/Endian.h>
-#include <muduo/net/SocketsOps.h>
+#include <prime/base/Logging.h>
+#include <prime/net/Endian.h>
+#include <prime/net/SocketsOps.h>
 
 #include <netdb.h>
 #include <strings.h>  // bzero
@@ -37,8 +37,8 @@ static const in_addr_t kInaddrLoopback = INADDR_LOOPBACK;
 //         in_addr_t       s_addr;     /* address in network byte order */
 //     };
 
-using namespace muduo;
-using namespace muduo::net;
+using namespace prime;
+using namespace prime::net;
 
 BOOST_STATIC_ASSERT(sizeof(InetAddress) == sizeof(struct sockaddr_in));
 

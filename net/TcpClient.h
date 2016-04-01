@@ -1,5 +1,5 @@
 // Copyright 2010, Shuo Chen.  All rights reserved.
-// http://code.google.com/p/muduo/
+// http://code.google.com/p/prime/
 //
 // Use of this source code is governed by a BSD-style license
 // that can be found in the License file.
@@ -13,10 +13,10 @@
 
 #include <boost/noncopyable.hpp>
 
-#include <muduo/base/Mutex.h>
-#include <muduo/net/TcpConnection.h>
+#include <prime/base/Mutex.h>
+#include <prime/net/TcpConnection.h>
 
-namespace muduo
+namespace prime
 {
 namespace net
 {

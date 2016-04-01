@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.o"
-  "../../../bin/echoserver_unittest.pdb"
-  "../../../bin/echoserver_unittest"
+  "CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.o"
+  "echoserver_unittest.pdb"
+  "echoserver_unittest"
 )
 
 # Per-language clean rules from dependency scanning.

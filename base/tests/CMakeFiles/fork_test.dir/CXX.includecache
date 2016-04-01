@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/prime/base/CurrentThread.h
+stdint.h
+-
+
+/root/prime/base/tests/Fork_test.cc
+prime/base/CurrentThread.h
+-
+stdio.h
+-
+sys/types.h
+-
+unistd.h
+-
+

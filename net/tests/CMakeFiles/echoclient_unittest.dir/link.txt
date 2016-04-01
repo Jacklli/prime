@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.o  -o echoclient_unittest -rdynamic -lprime_net 

@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.o  -o timerqueue_unittest -rdynamic -lprime_net 

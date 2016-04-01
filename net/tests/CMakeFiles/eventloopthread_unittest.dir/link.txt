@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.o  -o eventloopthread_unittest -rdynamic -lprime_net 

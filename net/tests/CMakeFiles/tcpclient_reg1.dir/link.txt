@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.o  -o tcpclient_reg1 -rdynamic -lprime_net 

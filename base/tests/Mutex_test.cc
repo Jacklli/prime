@@ -42,7 +42,7 @@ int foo()
 
 int main()
 {
-  MCHECK(foo());
+  foo();
   if (g_count != 1)
   {
     printf("MCHECK calls twice.\n");

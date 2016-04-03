@@ -187,12 +187,6 @@ Project_BINARY_DIR:STATIC=/root/prime/build
 Project_SOURCE_DIR:STATIC=/root/prime/build
 
 //Dependencies for target
-muduo_base_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-muduo_net_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
 prime_base_LIB_DEPENDS:STATIC=
 
 //Dependencies for target

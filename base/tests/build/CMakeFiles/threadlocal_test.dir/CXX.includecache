@@ -30,12 +30,6 @@ boost/shared_ptr.hpp
 pthread.h
 -
 
-/root/prime/base/ThreadLocal.h
-boost/noncopyable.hpp
--
-pthread.h
--
-
 /root/prime/base/Types.h
 stdint.h
 -

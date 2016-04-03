@@ -307,32 +307,6 @@ processinfo_test/fast:
 .PHONY : processinfo_test/fast
 
 #=============================================================================
-# Target rules for targets named singleton_test
-
-# Build rule for target.
-singleton_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 singleton_test
-.PHONY : singleton_test
-
-# fast build rule for target.
-singleton_test/fast:
-	$(MAKE) -f CMakeFiles/singleton_test.dir/build.make CMakeFiles/singleton_test.dir/build
-.PHONY : singleton_test/fast
-
-#=============================================================================
-# Target rules for targets named singleton_threadlocal_test
-
-# Build rule for target.
-singleton_threadlocal_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 singleton_threadlocal_test
-.PHONY : singleton_threadlocal_test
-
-# fast build rule for target.
-singleton_threadlocal_test/fast:
-	$(MAKE) -f CMakeFiles/singleton_threadlocal_test.dir/build.make CMakeFiles/singleton_threadlocal_test.dir/build
-.PHONY : singleton_threadlocal_test/fast
-
-#=============================================================================
 # Target rules for targets named thread_bench
 
 # Build rule for target.
@@ -357,32 +331,6 @@ thread_test: cmake_check_build_system
 thread_test/fast:
 	$(MAKE) -f CMakeFiles/thread_test.dir/build.make CMakeFiles/thread_test.dir/build
 .PHONY : thread_test/fast
-
-#=============================================================================
-# Target rules for targets named threadlocal_test
-
-# Build rule for target.
-threadlocal_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 threadlocal_test
-.PHONY : threadlocal_test
-
-# fast build rule for target.
-threadlocal_test/fast:
-	$(MAKE) -f CMakeFiles/threadlocal_test.dir/build.make CMakeFiles/threadlocal_test.dir/build
-.PHONY : threadlocal_test/fast
-
-#=============================================================================
-# Target rules for targets named threadlocalsingleton_test
-
-# Build rule for target.
-threadlocalsingleton_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 threadlocalsingleton_test
-.PHONY : threadlocalsingleton_test
-
-# fast build rule for target.
-threadlocalsingleton_test/fast:
-	$(MAKE) -f CMakeFiles/threadlocalsingleton_test.dir/build.make CMakeFiles/threadlocalsingleton_test.dir/build
-.PHONY : threadlocalsingleton_test/fast
 
 #=============================================================================
 # Target rules for targets named threadpool_test
@@ -844,66 +792,6 @@ root/prime/base/tests/ProcessInfo_test.s:
 .PHONY : root/prime/base/tests/ProcessInfo_test.s
 
 # target to build an object file
-root/prime/base/tests/SingletonThreadLocal_test.o:
-	$(MAKE) -f CMakeFiles/singleton_threadlocal_test.dir/build.make CMakeFiles/singleton_threadlocal_test.dir/root/prime/base/tests/SingletonThreadLocal_test.o
-.PHONY : root/prime/base/tests/SingletonThreadLocal_test.o
-
-# target to preprocess a source file
-root/prime/base/tests/SingletonThreadLocal_test.i:
-	$(MAKE) -f CMakeFiles/singleton_threadlocal_test.dir/build.make CMakeFiles/singleton_threadlocal_test.dir/root/prime/base/tests/SingletonThreadLocal_test.i
-.PHONY : root/prime/base/tests/SingletonThreadLocal_test.i
-
-# target to generate assembly for a file
-root/prime/base/tests/SingletonThreadLocal_test.s:
-	$(MAKE) -f CMakeFiles/singleton_threadlocal_test.dir/build.make CMakeFiles/singleton_threadlocal_test.dir/root/prime/base/tests/SingletonThreadLocal_test.s
-.PHONY : root/prime/base/tests/SingletonThreadLocal_test.s
-
-# target to build an object file
-root/prime/base/tests/Singleton_test.o:
-	$(MAKE) -f CMakeFiles/singleton_test.dir/build.make CMakeFiles/singleton_test.dir/root/prime/base/tests/Singleton_test.o
-.PHONY : root/prime/base/tests/Singleton_test.o
-
-# target to preprocess a source file
-root/prime/base/tests/Singleton_test.i:
-	$(MAKE) -f CMakeFiles/singleton_test.dir/build.make CMakeFiles/singleton_test.dir/root/prime/base/tests/Singleton_test.i
-.PHONY : root/prime/base/tests/Singleton_test.i
-
-# target to generate assembly for a file
-root/prime/base/tests/Singleton_test.s:
-	$(MAKE) -f CMakeFiles/singleton_test.dir/build.make CMakeFiles/singleton_test.dir/root/prime/base/tests/Singleton_test.s
-.PHONY : root/prime/base/tests/Singleton_test.s
-
-# target to build an object file
-root/prime/base/tests/ThreadLocalSingleton_test.o:
-	$(MAKE) -f CMakeFiles/threadlocalsingleton_test.dir/build.make CMakeFiles/threadlocalsingleton_test.dir/root/prime/base/tests/ThreadLocalSingleton_test.o
-.PHONY : root/prime/base/tests/ThreadLocalSingleton_test.o
-
-# target to preprocess a source file
-root/prime/base/tests/ThreadLocalSingleton_test.i:
-	$(MAKE) -f CMakeFiles/threadlocalsingleton_test.dir/build.make CMakeFiles/threadlocalsingleton_test.dir/root/prime/base/tests/ThreadLocalSingleton_test.i
-.PHONY : root/prime/base/tests/ThreadLocalSingleton_test.i
-
-# target to generate assembly for a file
-root/prime/base/tests/ThreadLocalSingleton_test.s:
-	$(MAKE) -f CMakeFiles/threadlocalsingleton_test.dir/build.make CMakeFiles/threadlocalsingleton_test.dir/root/prime/base/tests/ThreadLocalSingleton_test.s
-.PHONY : root/prime/base/tests/ThreadLocalSingleton_test.s
-
-# target to build an object file
-root/prime/base/tests/ThreadLocal_test.o:
-	$(MAKE) -f CMakeFiles/threadlocal_test.dir/build.make CMakeFiles/threadlocal_test.dir/root/prime/base/tests/ThreadLocal_test.o
-.PHONY : root/prime/base/tests/ThreadLocal_test.o
-
-# target to preprocess a source file
-root/prime/base/tests/ThreadLocal_test.i:
-	$(MAKE) -f CMakeFiles/threadlocal_test.dir/build.make CMakeFiles/threadlocal_test.dir/root/prime/base/tests/ThreadLocal_test.i
-.PHONY : root/prime/base/tests/ThreadLocal_test.i
-
-# target to generate assembly for a file
-root/prime/base/tests/ThreadLocal_test.s:
-	$(MAKE) -f CMakeFiles/threadlocal_test.dir/build.make CMakeFiles/threadlocal_test.dir/root/prime/base/tests/ThreadLocal_test.s
-.PHONY : root/prime/base/tests/ThreadLocal_test.s
-
-# target to build an object file
 root/prime/base/tests/ThreadPool_test.o:
 	$(MAKE) -f CMakeFiles/threadpool_test.dir/build.make CMakeFiles/threadpool_test.dir/root/prime/base/tests/ThreadPool_test.o
 .PHONY : root/prime/base/tests/ThreadPool_test.o
@@ -1287,12 +1175,8 @@ help:
 	@echo "... prime_net"
 	@echo "... processinfo_test"
 	@echo "... rebuild_cache"
-	@echo "... singleton_test"
-	@echo "... singleton_threadlocal_test"
 	@echo "... thread_bench"
 	@echo "... thread_test"
-	@echo "... threadlocal_test"
-	@echo "... threadlocalsingleton_test"
 	@echo "... threadpool_test"
 	@echo "... timestamp_unittest"
 	@echo "... timezone_unittest"
@@ -1380,18 +1264,6 @@ help:
 	@echo "... root/prime/base/tests/ProcessInfo_test.o"
 	@echo "... root/prime/base/tests/ProcessInfo_test.i"
 	@echo "... root/prime/base/tests/ProcessInfo_test.s"
-	@echo "... root/prime/base/tests/SingletonThreadLocal_test.o"
-	@echo "... root/prime/base/tests/SingletonThreadLocal_test.i"
-	@echo "... root/prime/base/tests/SingletonThreadLocal_test.s"
-	@echo "... root/prime/base/tests/Singleton_test.o"
-	@echo "... root/prime/base/tests/Singleton_test.i"
-	@echo "... root/prime/base/tests/Singleton_test.s"
-	@echo "... root/prime/base/tests/ThreadLocalSingleton_test.o"
-	@echo "... root/prime/base/tests/ThreadLocalSingleton_test.i"
-	@echo "... root/prime/base/tests/ThreadLocalSingleton_test.s"
-	@echo "... root/prime/base/tests/ThreadLocal_test.o"
-	@echo "... root/prime/base/tests/ThreadLocal_test.i"
-	@echo "... root/prime/base/tests/ThreadLocal_test.s"
 	@echo "... root/prime/base/tests/ThreadPool_test.o"
 	@echo "... root/prime/base/tests/ThreadPool_test.i"
 	@echo "... root/prime/base/tests/ThreadPool_test.s"

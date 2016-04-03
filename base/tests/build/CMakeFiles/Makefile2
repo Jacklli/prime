@@ -613,83 +613,13 @@ clean: CMakeFiles/processinfo_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/singleton_test.dir
-
-# All Build rule for target.
-CMakeFiles/singleton_test.dir/all: CMakeFiles/prime_base.dir/all
-	$(MAKE) -f CMakeFiles/singleton_test.dir/build.make CMakeFiles/singleton_test.dir/depend
-	$(MAKE) -f CMakeFiles/singleton_test.dir/build.make CMakeFiles/singleton_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  48
-	@echo "Built target singleton_test"
-.PHONY : CMakeFiles/singleton_test.dir/all
-
-# Include target in all.
-all: CMakeFiles/singleton_test.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/singleton_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/base/tests/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/singleton_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/base/tests/build/CMakeFiles 0
-.PHONY : CMakeFiles/singleton_test.dir/rule
-
-# Convenience name for target.
-singleton_test: CMakeFiles/singleton_test.dir/rule
-.PHONY : singleton_test
-
-# clean rule for target.
-CMakeFiles/singleton_test.dir/clean:
-	$(MAKE) -f CMakeFiles/singleton_test.dir/build.make CMakeFiles/singleton_test.dir/clean
-.PHONY : CMakeFiles/singleton_test.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/singleton_test.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/singleton_threadlocal_test.dir
-
-# All Build rule for target.
-CMakeFiles/singleton_threadlocal_test.dir/all: CMakeFiles/prime_base.dir/all
-	$(MAKE) -f CMakeFiles/singleton_threadlocal_test.dir/build.make CMakeFiles/singleton_threadlocal_test.dir/depend
-	$(MAKE) -f CMakeFiles/singleton_threadlocal_test.dir/build.make CMakeFiles/singleton_threadlocal_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  49
-	@echo "Built target singleton_threadlocal_test"
-.PHONY : CMakeFiles/singleton_threadlocal_test.dir/all
-
-# Include target in all.
-all: CMakeFiles/singleton_threadlocal_test.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/singleton_threadlocal_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/base/tests/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/singleton_threadlocal_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/base/tests/build/CMakeFiles 0
-.PHONY : CMakeFiles/singleton_threadlocal_test.dir/rule
-
-# Convenience name for target.
-singleton_threadlocal_test: CMakeFiles/singleton_threadlocal_test.dir/rule
-.PHONY : singleton_threadlocal_test
-
-# clean rule for target.
-CMakeFiles/singleton_threadlocal_test.dir/clean:
-	$(MAKE) -f CMakeFiles/singleton_threadlocal_test.dir/build.make CMakeFiles/singleton_threadlocal_test.dir/clean
-.PHONY : CMakeFiles/singleton_threadlocal_test.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/singleton_threadlocal_test.dir/clean
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/thread_bench.dir
 
 # All Build rule for target.
 CMakeFiles/thread_bench.dir/all: CMakeFiles/prime_base.dir/all
 	$(MAKE) -f CMakeFiles/thread_bench.dir/build.make CMakeFiles/thread_bench.dir/depend
 	$(MAKE) -f CMakeFiles/thread_bench.dir/build.make CMakeFiles/thread_bench.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  50
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  48
 	@echo "Built target thread_bench"
 .PHONY : CMakeFiles/thread_bench.dir/all
 
@@ -724,7 +654,7 @@ clean: CMakeFiles/thread_bench.dir/clean
 CMakeFiles/thread_test.dir/all: CMakeFiles/prime_base.dir/all
 	$(MAKE) -f CMakeFiles/thread_test.dir/build.make CMakeFiles/thread_test.dir/depend
 	$(MAKE) -f CMakeFiles/thread_test.dir/build.make CMakeFiles/thread_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  51
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  49
 	@echo "Built target thread_test"
 .PHONY : CMakeFiles/thread_test.dir/all
 
@@ -753,83 +683,13 @@ clean: CMakeFiles/thread_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/threadlocal_test.dir
-
-# All Build rule for target.
-CMakeFiles/threadlocal_test.dir/all: CMakeFiles/prime_base.dir/all
-	$(MAKE) -f CMakeFiles/threadlocal_test.dir/build.make CMakeFiles/threadlocal_test.dir/depend
-	$(MAKE) -f CMakeFiles/threadlocal_test.dir/build.make CMakeFiles/threadlocal_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  52
-	@echo "Built target threadlocal_test"
-.PHONY : CMakeFiles/threadlocal_test.dir/all
-
-# Include target in all.
-all: CMakeFiles/threadlocal_test.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/threadlocal_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/base/tests/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/threadlocal_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/base/tests/build/CMakeFiles 0
-.PHONY : CMakeFiles/threadlocal_test.dir/rule
-
-# Convenience name for target.
-threadlocal_test: CMakeFiles/threadlocal_test.dir/rule
-.PHONY : threadlocal_test
-
-# clean rule for target.
-CMakeFiles/threadlocal_test.dir/clean:
-	$(MAKE) -f CMakeFiles/threadlocal_test.dir/build.make CMakeFiles/threadlocal_test.dir/clean
-.PHONY : CMakeFiles/threadlocal_test.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/threadlocal_test.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/threadlocalsingleton_test.dir
-
-# All Build rule for target.
-CMakeFiles/threadlocalsingleton_test.dir/all: CMakeFiles/prime_base.dir/all
-	$(MAKE) -f CMakeFiles/threadlocalsingleton_test.dir/build.make CMakeFiles/threadlocalsingleton_test.dir/depend
-	$(MAKE) -f CMakeFiles/threadlocalsingleton_test.dir/build.make CMakeFiles/threadlocalsingleton_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  53
-	@echo "Built target threadlocalsingleton_test"
-.PHONY : CMakeFiles/threadlocalsingleton_test.dir/all
-
-# Include target in all.
-all: CMakeFiles/threadlocalsingleton_test.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/threadlocalsingleton_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/base/tests/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/threadlocalsingleton_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/base/tests/build/CMakeFiles 0
-.PHONY : CMakeFiles/threadlocalsingleton_test.dir/rule
-
-# Convenience name for target.
-threadlocalsingleton_test: CMakeFiles/threadlocalsingleton_test.dir/rule
-.PHONY : threadlocalsingleton_test
-
-# clean rule for target.
-CMakeFiles/threadlocalsingleton_test.dir/clean:
-	$(MAKE) -f CMakeFiles/threadlocalsingleton_test.dir/build.make CMakeFiles/threadlocalsingleton_test.dir/clean
-.PHONY : CMakeFiles/threadlocalsingleton_test.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/threadlocalsingleton_test.dir/clean
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/threadpool_test.dir
 
 # All Build rule for target.
 CMakeFiles/threadpool_test.dir/all: CMakeFiles/prime_base.dir/all
 	$(MAKE) -f CMakeFiles/threadpool_test.dir/build.make CMakeFiles/threadpool_test.dir/depend
 	$(MAKE) -f CMakeFiles/threadpool_test.dir/build.make CMakeFiles/threadpool_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  54
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  50
 	@echo "Built target threadpool_test"
 .PHONY : CMakeFiles/threadpool_test.dir/all
 
@@ -864,7 +724,7 @@ clean: CMakeFiles/threadpool_test.dir/clean
 CMakeFiles/timestamp_unittest.dir/all: CMakeFiles/prime_base.dir/all
 	$(MAKE) -f CMakeFiles/timestamp_unittest.dir/build.make CMakeFiles/timestamp_unittest.dir/depend
 	$(MAKE) -f CMakeFiles/timestamp_unittest.dir/build.make CMakeFiles/timestamp_unittest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  55
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  51
 	@echo "Built target timestamp_unittest"
 .PHONY : CMakeFiles/timestamp_unittest.dir/all
 
@@ -899,7 +759,7 @@ clean: CMakeFiles/timestamp_unittest.dir/clean
 CMakeFiles/timezone_unittest.dir/all: CMakeFiles/prime_base.dir/all
 	$(MAKE) -f CMakeFiles/timezone_unittest.dir/build.make CMakeFiles/timezone_unittest.dir/depend
 	$(MAKE) -f CMakeFiles/timezone_unittest.dir/build.make CMakeFiles/timezone_unittest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  56
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/base/tests/build/CMakeFiles  52
 	@echo "Built target timezone_unittest"
 .PHONY : CMakeFiles/timezone_unittest.dir/all
 

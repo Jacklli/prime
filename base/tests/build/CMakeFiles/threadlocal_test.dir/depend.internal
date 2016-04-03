@@ -5,6 +5,5 @@ CMakeFiles/threadlocal_test.dir/root/prime/base/tests/ThreadLocal_test.o
  /root/prime/base/Atomic.h
  /root/prime/base/CurrentThread.h
  /root/prime/base/Thread.h
- /root/prime/base/ThreadLocal.h
  /root/prime/base/Types.h
  /root/prime/base/tests/ThreadLocal_test.cc

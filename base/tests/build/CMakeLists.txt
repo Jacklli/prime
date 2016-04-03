@@ -120,12 +120,6 @@ target_link_libraries(mutex_test prime_base)
 add_executable(processinfo_test ../ProcessInfo_test.cc)
 target_link_libraries(processinfo_test prime_base)
 
-add_executable(singleton_test ../Singleton_test.cc)
-target_link_libraries(singleton_test prime_base)
-
-add_executable(singleton_threadlocal_test ../SingletonThreadLocal_test.cc)
-target_link_libraries(singleton_threadlocal_test prime_base)
-
 add_executable(timestamp_unittest ../Timestamp_unittest.cc)
 target_link_libraries(timestamp_unittest prime_base)
 
@@ -137,12 +131,6 @@ target_link_libraries(thread_bench prime_base)
 
 add_executable(thread_test ../Thread_test.cc)
 target_link_libraries(thread_test prime_base)
-
-add_executable(threadlocal_test ../ThreadLocal_test.cc)
-target_link_libraries(threadlocal_test prime_base)
-
-add_executable(threadlocalsingleton_test ../ThreadLocalSingleton_test.cc)
-target_link_libraries(threadlocalsingleton_test prime_base)
 
 add_executable(threadpool_test ../ThreadPool_test.cc)
 target_link_libraries(threadpool_test prime_base)

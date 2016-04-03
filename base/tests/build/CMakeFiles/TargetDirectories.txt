@@ -14,12 +14,8 @@
 /root/prime/base/tests/build/CMakeFiles/prime_base.dir
 /root/prime/base/tests/build/CMakeFiles/prime_net.dir
 /root/prime/base/tests/build/CMakeFiles/processinfo_test.dir
-/root/prime/base/tests/build/CMakeFiles/singleton_test.dir
-/root/prime/base/tests/build/CMakeFiles/singleton_threadlocal_test.dir
 /root/prime/base/tests/build/CMakeFiles/thread_bench.dir
 /root/prime/base/tests/build/CMakeFiles/thread_test.dir
-/root/prime/base/tests/build/CMakeFiles/threadlocal_test.dir
-/root/prime/base/tests/build/CMakeFiles/threadlocalsingleton_test.dir
 /root/prime/base/tests/build/CMakeFiles/threadpool_test.dir
 /root/prime/base/tests/build/CMakeFiles/timestamp_unittest.dir
 /root/prime/base/tests/build/CMakeFiles/timezone_unittest.dir

@@ -164,20 +164,6 @@ Thread::Thread(const ThreadFunc& func, const string& n)
   numCreated_.increment();
 }
 
-#ifdef __GXX_EXPERIMENTAL_CXX0X__
-Thread::Thread(ThreadFunc&& func, const string& n)
-  : started_(false),
-    joined_(false),
-    pthreadId_(0),
-    tid_(new pid_t(0)),
-    func_(std::move(func)),
-    name_(n)
-{
-  numCreated_.increment();
-}
-
-#endif
-
 Thread::~Thread()
 {
   if (started_ && !joined_)

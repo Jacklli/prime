@@ -51,8 +51,6 @@ stdint.h
 -
 
 /root/prime/base/LogStream.h
-prime/base/StringPiece.h
--
 prime/base/Types.h
 -
 assert.h
@@ -78,16 +76,6 @@ boost/noncopyable.hpp
 assert.h
 -
 pthread.h
--
-
-/root/prime/base/StringPiece.h
-string.h
--
-iosfwd
--
-prime/base/Types.h
--
-string
 -
 
 /root/prime/base/Thread.h

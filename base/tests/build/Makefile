@@ -203,19 +203,6 @@ logging_test/fast:
 .PHONY : logging_test/fast
 
 #=============================================================================
-# Target rules for targets named logstream_bench
-
-# Build rule for target.
-logstream_bench: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 logstream_bench
-.PHONY : logstream_bench
-
-# fast build rule for target.
-logstream_bench/fast:
-	$(MAKE) -f CMakeFiles/logstream_bench.dir/build.make CMakeFiles/logstream_bench.dir/build
-.PHONY : logstream_bench/fast
-
-#=============================================================================
 # Target rules for targets named mutex_test
 
 # Build rule for target.
@@ -266,19 +253,6 @@ processinfo_test: cmake_check_build_system
 processinfo_test/fast:
 	$(MAKE) -f CMakeFiles/processinfo_test.dir/build.make CMakeFiles/processinfo_test.dir/build
 .PHONY : processinfo_test/fast
-
-#=============================================================================
-# Target rules for targets named thread_bench
-
-# Build rule for target.
-thread_bench: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thread_bench
-.PHONY : thread_bench
-
-# fast build rule for target.
-thread_bench/fast:
-	$(MAKE) -f CMakeFiles/thread_bench.dir/build.make CMakeFiles/thread_bench.dir/build
-.PHONY : thread_bench/fast
 
 #=============================================================================
 # Target rules for targets named thread_test
@@ -620,21 +594,6 @@ root/prime/base/tests/LogFile_test.s:
 .PHONY : root/prime/base/tests/LogFile_test.s
 
 # target to build an object file
-root/prime/base/tests/LogStream_bench.o:
-	$(MAKE) -f CMakeFiles/logstream_bench.dir/build.make CMakeFiles/logstream_bench.dir/root/prime/base/tests/LogStream_bench.o
-.PHONY : root/prime/base/tests/LogStream_bench.o
-
-# target to preprocess a source file
-root/prime/base/tests/LogStream_bench.i:
-	$(MAKE) -f CMakeFiles/logstream_bench.dir/build.make CMakeFiles/logstream_bench.dir/root/prime/base/tests/LogStream_bench.i
-.PHONY : root/prime/base/tests/LogStream_bench.i
-
-# target to generate assembly for a file
-root/prime/base/tests/LogStream_bench.s:
-	$(MAKE) -f CMakeFiles/logstream_bench.dir/build.make CMakeFiles/logstream_bench.dir/root/prime/base/tests/LogStream_bench.s
-.PHONY : root/prime/base/tests/LogStream_bench.s
-
-# target to build an object file
 root/prime/base/tests/Logging_test.o:
 	$(MAKE) -f CMakeFiles/logging_test.dir/build.make CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o
 .PHONY : root/prime/base/tests/Logging_test.o
@@ -678,21 +637,6 @@ root/prime/base/tests/ProcessInfo_test.i:
 root/prime/base/tests/ProcessInfo_test.s:
 	$(MAKE) -f CMakeFiles/processinfo_test.dir/build.make CMakeFiles/processinfo_test.dir/root/prime/base/tests/ProcessInfo_test.s
 .PHONY : root/prime/base/tests/ProcessInfo_test.s
-
-# target to build an object file
-root/prime/base/tests/Thread_bench.o:
-	$(MAKE) -f CMakeFiles/thread_bench.dir/build.make CMakeFiles/thread_bench.dir/root/prime/base/tests/Thread_bench.o
-.PHONY : root/prime/base/tests/Thread_bench.o
-
-# target to preprocess a source file
-root/prime/base/tests/Thread_bench.i:
-	$(MAKE) -f CMakeFiles/thread_bench.dir/build.make CMakeFiles/thread_bench.dir/root/prime/base/tests/Thread_bench.i
-.PHONY : root/prime/base/tests/Thread_bench.i
-
-# target to generate assembly for a file
-root/prime/base/tests/Thread_bench.s:
-	$(MAKE) -f CMakeFiles/thread_bench.dir/build.make CMakeFiles/thread_bench.dir/root/prime/base/tests/Thread_bench.s
-.PHONY : root/prime/base/tests/Thread_bench.s
 
 # target to build an object file
 root/prime/base/tests/Thread_test.o:
@@ -1009,13 +953,11 @@ help:
 	@echo "... fork_test"
 	@echo "... logfile_test"
 	@echo "... logging_test"
-	@echo "... logstream_bench"
 	@echo "... mutex_test"
 	@echo "... prime_base"
 	@echo "... prime_net"
 	@echo "... processinfo_test"
 	@echo "... rebuild_cache"
-	@echo "... thread_bench"
 	@echo "... thread_test"
 	@echo "... timestamp_unittest"
 	@echo "... timezone_unittest"
@@ -1079,9 +1021,6 @@ help:
 	@echo "... root/prime/base/tests/LogFile_test.o"
 	@echo "... root/prime/base/tests/LogFile_test.i"
 	@echo "... root/prime/base/tests/LogFile_test.s"
-	@echo "... root/prime/base/tests/LogStream_bench.o"
-	@echo "... root/prime/base/tests/LogStream_bench.i"
-	@echo "... root/prime/base/tests/LogStream_bench.s"
 	@echo "... root/prime/base/tests/Logging_test.o"
 	@echo "... root/prime/base/tests/Logging_test.i"
 	@echo "... root/prime/base/tests/Logging_test.s"
@@ -1091,9 +1030,6 @@ help:
 	@echo "... root/prime/base/tests/ProcessInfo_test.o"
 	@echo "... root/prime/base/tests/ProcessInfo_test.i"
 	@echo "... root/prime/base/tests/ProcessInfo_test.s"
-	@echo "... root/prime/base/tests/Thread_bench.o"
-	@echo "... root/prime/base/tests/Thread_bench.i"
-	@echo "... root/prime/base/tests/Thread_bench.s"
 	@echo "... root/prime/base/tests/Thread_test.o"
 	@echo "... root/prime/base/tests/Thread_test.i"
 	@echo "... root/prime/base/tests/Thread_test.s"

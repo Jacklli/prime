@@ -10,7 +10,6 @@ CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/Curre
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/LogFile.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/Mutex.h
-CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/Thread.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/Types.h
@@ -58,14 +57,12 @@ CMakeFiles/prime_base.dir/root/prime/base/LogFile.o: /root/prime/base/copyable.h
 
 CMakeFiles/prime_base.dir/root/prime/base/LogStream.o: /root/prime/base/LogStream.cc
 CMakeFiles/prime_base.dir/root/prime/base/LogStream.o: /root/prime/base/LogStream.h
-CMakeFiles/prime_base.dir/root/prime/base/LogStream.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_base.dir/root/prime/base/LogStream.o: /root/prime/base/Types.h
 
 CMakeFiles/prime_base.dir/root/prime/base/Logging.o: /root/prime/base/CurrentThread.h
 CMakeFiles/prime_base.dir/root/prime/base/Logging.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_base.dir/root/prime/base/Logging.o: /root/prime/base/Logging.cc
 CMakeFiles/prime_base.dir/root/prime/base/Logging.o: /root/prime/base/Logging.h
-CMakeFiles/prime_base.dir/root/prime/base/Logging.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_base.dir/root/prime/base/Logging.o: /root/prime/base/TimeZone.h
 CMakeFiles/prime_base.dir/root/prime/base/Logging.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_base.dir/root/prime/base/Logging.o: /root/prime/base/Types.h
@@ -84,7 +81,6 @@ CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/CurrentThre
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/Exception.h
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/Logging.h
-CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/Thread.cc
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/Thread.h
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/Timestamp.h

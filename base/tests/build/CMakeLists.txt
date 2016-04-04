@@ -94,9 +94,6 @@ target_link_libraries(logfile_test prime_base)
 add_executable(logging_test ../Logging_test.cc)
 target_link_libraries(logging_test prime_base)
 
-add_executable(logstream_bench ../LogStream_bench.cc)
-target_link_libraries(logstream_bench prime_base)
-
 if(BOOSTTEST_LIBRARY)
 add_executable(logstream_test ../LogStream_test.cc)
 target_link_libraries(logstream_test prime_base boost_unit_test_framework)
@@ -113,9 +110,6 @@ target_link_libraries(timestamp_unittest prime_base)
 
 add_executable(timezone_unittest ../TimeZone_unittest.cc)
 target_link_libraries(timezone_unittest prime_base)
-
-add_executable(thread_bench ../Thread_bench.cc)
-target_link_libraries(thread_bench prime_base)
 
 add_executable(thread_test ../Thread_test.cc)
 target_link_libraries(thread_test prime_base)

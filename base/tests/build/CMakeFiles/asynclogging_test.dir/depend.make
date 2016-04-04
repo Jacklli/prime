@@ -9,7 +9,6 @@ CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /roo
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/LogStream.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/Logging.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/Mutex.h
-CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/StringPiece.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/Thread.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/Timestamp.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/Types.h

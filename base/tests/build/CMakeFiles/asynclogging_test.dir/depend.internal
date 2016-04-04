@@ -4,8 +4,6 @@
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o
  /root/prime/base/AsyncLogging.h
  /root/prime/base/Atomic.h
- /root/prime/base/BlockingQueue.h
- /root/prime/base/BoundedBlockingQueue.h
  /root/prime/base/Condition.h
  /root/prime/base/CountDownLatch.h
  /root/prime/base/CurrentThread.h

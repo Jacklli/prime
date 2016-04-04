@@ -81,6 +81,7 @@ atomic_unittest_EXTERNAL_OBJECTS =
 
 atomic_unittest: CMakeFiles/atomic_unittest.dir/root/prime/base/tests/Atomic_unittest.o
 atomic_unittest: CMakeFiles/atomic_unittest.dir/build.make
+atomic_unittest: libprime_base.a
 atomic_unittest: CMakeFiles/atomic_unittest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable atomic_unittest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atomic_unittest.dir/link.txt --verbose=$(VERBOSE)

@@ -12,18 +12,6 @@ boost/noncopyable.hpp
 stdint.h
 -
 
-/root/prime/base/BoundedBlockingQueue.h
-prime/base/Condition.h
--
-prime/base/Mutex.h
--
-boost/circular_buffer.hpp
--
-boost/noncopyable.hpp
--
-assert.h
--
-
 /root/prime/base/Condition.h
 prime/base/Mutex.h
 -

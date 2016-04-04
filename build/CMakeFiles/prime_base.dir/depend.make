@@ -4,8 +4,6 @@
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/AsyncLogging.cc
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/AsyncLogging.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/Atomic.h
-CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/BlockingQueue.h
-CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/BoundedBlockingQueue.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/Condition.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/CountDownLatch.h
 CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o: /root/prime/base/CurrentThread.h

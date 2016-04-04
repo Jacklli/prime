@@ -3,8 +3,6 @@
 
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/AsyncLogging.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/Atomic.h
-CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/BlockingQueue.h
-CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/BoundedBlockingQueue.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/Condition.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/CountDownLatch.h
 CMakeFiles/asynclogging_test.dir/root/prime/base/tests/AsyncLogging_test.o: /root/prime/base/CurrentThread.h

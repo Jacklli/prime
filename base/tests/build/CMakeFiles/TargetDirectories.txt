@@ -1,8 +1,5 @@
 /root/prime/base/tests/build/CMakeFiles/asynclogging_test.dir
 /root/prime/base/tests/build/CMakeFiles/atomic_unittest.dir
-/root/prime/base/tests/build/CMakeFiles/blockingqueue_bench.dir
-/root/prime/base/tests/build/CMakeFiles/blockingqueue_test.dir
-/root/prime/base/tests/build/CMakeFiles/boundedblockingqueue_test.dir
 /root/prime/base/tests/build/CMakeFiles/date_unittest.dir
 /root/prime/base/tests/build/CMakeFiles/exception_test.dir
 /root/prime/base/tests/build/CMakeFiles/fileutil_test.dir

@@ -7,10 +7,6 @@
 #IncludeRegexTransform: 
 
 /root/prime/base/AsyncLogging.h
-prime/base/BlockingQueue.h
--
-prime/base/BoundedBlockingQueue.h
--
 prime/base/CountDownLatch.h
 -
 prime/base/Mutex.h
@@ -32,30 +28,6 @@ boost/ptr_container/ptr_vector.hpp
 boost/noncopyable.hpp
 -
 stdint.h
--
-
-/root/prime/base/BlockingQueue.h
-prime/base/Condition.h
--
-prime/base/Mutex.h
--
-boost/noncopyable.hpp
--
-deque
--
-assert.h
--
-
-/root/prime/base/BoundedBlockingQueue.h
-prime/base/Condition.h
--
-prime/base/Mutex.h
--
-boost/circular_buffer.hpp
--
-boost/noncopyable.hpp
--
-assert.h
 -
 
 /root/prime/base/Condition.h

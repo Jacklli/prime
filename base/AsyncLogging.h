@@ -1,8 +1,6 @@
 #ifndef MUDUO_BASE_ASYNCLOGGING_H
 #define MUDUO_BASE_ASYNCLOGGING_H
 
-#include <prime/base/BlockingQueue.h>
-#include <prime/base/BoundedBlockingQueue.h>
 #include <prime/base/CountDownLatch.h>
 #include <prime/base/Mutex.h>
 #include <prime/base/Thread.h>

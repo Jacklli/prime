@@ -125,45 +125,6 @@ atomic_unittest/fast:
 .PHONY : atomic_unittest/fast
 
 #=============================================================================
-# Target rules for targets named blockingqueue_bench
-
-# Build rule for target.
-blockingqueue_bench: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 blockingqueue_bench
-.PHONY : blockingqueue_bench
-
-# fast build rule for target.
-blockingqueue_bench/fast:
-	$(MAKE) -f CMakeFiles/blockingqueue_bench.dir/build.make CMakeFiles/blockingqueue_bench.dir/build
-.PHONY : blockingqueue_bench/fast
-
-#=============================================================================
-# Target rules for targets named blockingqueue_test
-
-# Build rule for target.
-blockingqueue_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 blockingqueue_test
-.PHONY : blockingqueue_test
-
-# fast build rule for target.
-blockingqueue_test/fast:
-	$(MAKE) -f CMakeFiles/blockingqueue_test.dir/build.make CMakeFiles/blockingqueue_test.dir/build
-.PHONY : blockingqueue_test/fast
-
-#=============================================================================
-# Target rules for targets named boundedblockingqueue_test
-
-# Build rule for target.
-boundedblockingqueue_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 boundedblockingqueue_test
-.PHONY : boundedblockingqueue_test
-
-# fast build rule for target.
-boundedblockingqueue_test/fast:
-	$(MAKE) -f CMakeFiles/boundedblockingqueue_test.dir/build.make CMakeFiles/boundedblockingqueue_test.dir/build
-.PHONY : boundedblockingqueue_test/fast
-
-#=============================================================================
 # Target rules for targets named date_unittest
 
 # Build rule for target.
@@ -582,51 +543,6 @@ root/prime/base/tests/Atomic_unittest.i:
 root/prime/base/tests/Atomic_unittest.s:
 	$(MAKE) -f CMakeFiles/atomic_unittest.dir/build.make CMakeFiles/atomic_unittest.dir/root/prime/base/tests/Atomic_unittest.s
 .PHONY : root/prime/base/tests/Atomic_unittest.s
-
-# target to build an object file
-root/prime/base/tests/BlockingQueue_bench.o:
-	$(MAKE) -f CMakeFiles/blockingqueue_bench.dir/build.make CMakeFiles/blockingqueue_bench.dir/root/prime/base/tests/BlockingQueue_bench.o
-.PHONY : root/prime/base/tests/BlockingQueue_bench.o
-
-# target to preprocess a source file
-root/prime/base/tests/BlockingQueue_bench.i:
-	$(MAKE) -f CMakeFiles/blockingqueue_bench.dir/build.make CMakeFiles/blockingqueue_bench.dir/root/prime/base/tests/BlockingQueue_bench.i
-.PHONY : root/prime/base/tests/BlockingQueue_bench.i
-
-# target to generate assembly for a file
-root/prime/base/tests/BlockingQueue_bench.s:
-	$(MAKE) -f CMakeFiles/blockingqueue_bench.dir/build.make CMakeFiles/blockingqueue_bench.dir/root/prime/base/tests/BlockingQueue_bench.s
-.PHONY : root/prime/base/tests/BlockingQueue_bench.s
-
-# target to build an object file
-root/prime/base/tests/BlockingQueue_test.o:
-	$(MAKE) -f CMakeFiles/blockingqueue_test.dir/build.make CMakeFiles/blockingqueue_test.dir/root/prime/base/tests/BlockingQueue_test.o
-.PHONY : root/prime/base/tests/BlockingQueue_test.o
-
-# target to preprocess a source file
-root/prime/base/tests/BlockingQueue_test.i:
-	$(MAKE) -f CMakeFiles/blockingqueue_test.dir/build.make CMakeFiles/blockingqueue_test.dir/root/prime/base/tests/BlockingQueue_test.i
-.PHONY : root/prime/base/tests/BlockingQueue_test.i
-
-# target to generate assembly for a file
-root/prime/base/tests/BlockingQueue_test.s:
-	$(MAKE) -f CMakeFiles/blockingqueue_test.dir/build.make CMakeFiles/blockingqueue_test.dir/root/prime/base/tests/BlockingQueue_test.s
-.PHONY : root/prime/base/tests/BlockingQueue_test.s
-
-# target to build an object file
-root/prime/base/tests/BoundedBlockingQueue_test.o:
-	$(MAKE) -f CMakeFiles/boundedblockingqueue_test.dir/build.make CMakeFiles/boundedblockingqueue_test.dir/root/prime/base/tests/BoundedBlockingQueue_test.o
-.PHONY : root/prime/base/tests/BoundedBlockingQueue_test.o
-
-# target to preprocess a source file
-root/prime/base/tests/BoundedBlockingQueue_test.i:
-	$(MAKE) -f CMakeFiles/boundedblockingqueue_test.dir/build.make CMakeFiles/boundedblockingqueue_test.dir/root/prime/base/tests/BoundedBlockingQueue_test.i
-.PHONY : root/prime/base/tests/BoundedBlockingQueue_test.i
-
-# target to generate assembly for a file
-root/prime/base/tests/BoundedBlockingQueue_test.s:
-	$(MAKE) -f CMakeFiles/boundedblockingqueue_test.dir/build.make CMakeFiles/boundedblockingqueue_test.dir/root/prime/base/tests/BoundedBlockingQueue_test.s
-.PHONY : root/prime/base/tests/BoundedBlockingQueue_test.s
 
 # target to build an object file
 root/prime/base/tests/Date_unittest.o:
@@ -1086,9 +1002,6 @@ help:
 	@echo "... depend"
 	@echo "... asynclogging_test"
 	@echo "... atomic_unittest"
-	@echo "... blockingqueue_bench"
-	@echo "... blockingqueue_test"
-	@echo "... boundedblockingqueue_test"
 	@echo "... date_unittest"
 	@echo "... edit_cache"
 	@echo "... exception_test"
@@ -1151,15 +1064,6 @@ help:
 	@echo "... root/prime/base/tests/Atomic_unittest.o"
 	@echo "... root/prime/base/tests/Atomic_unittest.i"
 	@echo "... root/prime/base/tests/Atomic_unittest.s"
-	@echo "... root/prime/base/tests/BlockingQueue_bench.o"
-	@echo "... root/prime/base/tests/BlockingQueue_bench.i"
-	@echo "... root/prime/base/tests/BlockingQueue_bench.s"
-	@echo "... root/prime/base/tests/BlockingQueue_test.o"
-	@echo "... root/prime/base/tests/BlockingQueue_test.i"
-	@echo "... root/prime/base/tests/BlockingQueue_test.s"
-	@echo "... root/prime/base/tests/BoundedBlockingQueue_test.o"
-	@echo "... root/prime/base/tests/BoundedBlockingQueue_test.i"
-	@echo "... root/prime/base/tests/BoundedBlockingQueue_test.s"
 	@echo "... root/prime/base/tests/Date_unittest.o"
 	@echo "... root/prime/base/tests/Date_unittest.i"
 	@echo "... root/prime/base/tests/Date_unittest.s"

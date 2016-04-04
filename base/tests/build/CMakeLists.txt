@@ -74,16 +74,7 @@ add_executable(asynclogging_test ../AsyncLogging_test.cc)
 target_link_libraries(asynclogging_test prime_base)
 
 add_executable(atomic_unittest ../Atomic_unittest.cc)
-# target_link_libraries(atomic_unittest prime_base)
-
-add_executable(blockingqueue_test ../BlockingQueue_test.cc)
-target_link_libraries(blockingqueue_test prime_base)
-
-add_executable(blockingqueue_bench ../BlockingQueue_bench.cc)
-target_link_libraries(blockingqueue_bench prime_base)
-
-add_executable(boundedblockingqueue_test ../BoundedBlockingQueue_test.cc)
-target_link_libraries(boundedblockingqueue_test prime_base)
+target_link_libraries(atomic_unittest prime_base)
 
 add_executable(date_unittest ../Date_unittest.cc)
 target_link_libraries(date_unittest prime_base)

@@ -3,7 +3,6 @@
 
 CMakeFiles/boundedblockingqueue_test.dir/root/prime/base/tests/BoundedBlockingQueue_test.o
  /root/prime/base/Atomic.h
- /root/prime/base/BoundedBlockingQueue.h
  /root/prime/base/Condition.h
  /root/prime/base/CountDownLatch.h
  /root/prime/base/CurrentThread.h

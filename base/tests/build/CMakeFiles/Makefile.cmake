@@ -41,9 +41,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/asynclogging_test.dir/DependInfo.cmake"
   "CMakeFiles/atomic_unittest.dir/DependInfo.cmake"
-  "CMakeFiles/blockingqueue_bench.dir/DependInfo.cmake"
-  "CMakeFiles/blockingqueue_test.dir/DependInfo.cmake"
-  "CMakeFiles/boundedblockingqueue_test.dir/DependInfo.cmake"
   "CMakeFiles/date_unittest.dir/DependInfo.cmake"
   "CMakeFiles/exception_test.dir/DependInfo.cmake"
   "CMakeFiles/fileutil_test.dir/DependInfo.cmake"

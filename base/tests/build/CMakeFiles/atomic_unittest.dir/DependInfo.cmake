@@ -10,6 +10,7 @@ SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/root/prime/base/tests/build/CMakeFiles/prime_base.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

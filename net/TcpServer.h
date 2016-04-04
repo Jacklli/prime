@@ -63,11 +63,8 @@ class TcpServer : boost::noncopyable
   /// - 1 means all I/O in another thread.
   /// - N means a thread pool with N threads, new connections
   ///   are assigned on a round-robin basis.
-  void setThreadNum(int numThreads);
   void setThreadInitCallback(const ThreadInitCallback& cb)
   { threadInitCallback_ = cb; }
-  /// valid after calling start()
-  EventLoopThreadPool* threadPool() { return get_pointer(threadPool_); }
 
   /// Starts the server if it's not listenning.
   ///
@@ -104,7 +101,6 @@ class TcpServer : boost::noncopyable
   const string hostport_;
   const string name_;
   boost::scoped_ptr<Acceptor> acceptor_; // avoid revealing Acceptor
-  boost::scoped_ptr<EventLoopThreadPool> threadPool_;
   ConnectionCallback connectionCallback_;
   MessageCallback messageCallback_;
   WriteCompleteCallback writeCompleteCallback_;

@@ -1,5 +1,4 @@
 #include <prime/net/EventLoop.h>
-#include <prime/net/EventLoopThread.h>
 #include <prime/base/Thread.h>
 
 #include <boost/bind.hpp>
@@ -59,9 +58,9 @@ int main()
   }
   sleep(1);
   {
-    EventLoopThread loopThread;
-    EventLoop* loop = loopThread.startLoop();
-    loop->runAfter(2, printTid);
+//    EventLoopThread loopThread;
+    EventLoop loop;
+    loop.runAfter(2, printTid);
     sleep(3);
     print("thread loop exits");
   }

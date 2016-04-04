@@ -1,6 +1,5 @@
 #include <prime/base/Logging.h>
 #include <prime/base/LogFile.h>
-#include <prime/base/ThreadPool.h>
 #include <prime/base/TimeZone.h>
 
 #include <stdio.h>
@@ -54,14 +53,6 @@ void logInThread()
 int main()
 {
   getppid(); // for ltrace and strace
-
-  prime::ThreadPool pool("pool");
-  pool.start(5);
-  pool.run(logInThread);
-  pool.run(logInThread);
-  pool.run(logInThread);
-  pool.run(logInThread);
-  pool.run(logInThread);
 
   LOG_TRACE << "trace";
   LOG_DEBUG << "debug";

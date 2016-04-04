@@ -93,16 +93,6 @@ CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/Types.h
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o: /root/prime/base/copyable.h
 
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/Atomic.h
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/Condition.h
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/CurrentThread.h
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/Exception.h
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/Mutex.h
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/Thread.h
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/ThreadPool.cc
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/ThreadPool.h
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/Types.h
-
 CMakeFiles/prime_base.dir/root/prime/base/TimeZone.o: /root/prime/base/Date.h
 CMakeFiles/prime_base.dir/root/prime/base/TimeZone.o: /root/prime/base/TimeZone.cc
 CMakeFiles/prime_base.dir/root/prime/base/TimeZone.o: /root/prime/base/TimeZone.h

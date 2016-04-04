@@ -4,8 +4,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/prime_net.dir/root/prime/net/Channel.o"
   "CMakeFiles/prime_net.dir/root/prime/net/Connector.o"
   "CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o"
-  "CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o"
-  "CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o"
   "CMakeFiles/prime_net.dir/root/prime/net/InetAddress.o"
   "CMakeFiles/prime_net.dir/root/prime/net/Poller.o"
   "CMakeFiles/prime_net.dir/root/prime/net/poller/DefaultPoller.o"

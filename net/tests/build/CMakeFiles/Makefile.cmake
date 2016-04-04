@@ -42,8 +42,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/echoclient_unittest.dir/DependInfo.cmake"
   "CMakeFiles/echoserver_unittest.dir/DependInfo.cmake"
   "CMakeFiles/eventloop_unittest.dir/DependInfo.cmake"
-  "CMakeFiles/eventloopthread_unittest.dir/DependInfo.cmake"
-  "CMakeFiles/eventloopthreadpool_unittest.dir/DependInfo.cmake"
   "CMakeFiles/prime_base.dir/DependInfo.cmake"
   "CMakeFiles/prime_net.dir/DependInfo.cmake"
   "CMakeFiles/tcpclient_reg1.dir/DependInfo.cmake"

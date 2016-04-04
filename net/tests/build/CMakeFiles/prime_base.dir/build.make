@@ -348,29 +348,6 @@ CMakeFiles/prime_base.dir/root/prime/base/Thread.o.provides: CMakeFiles/prime_ba
 
 CMakeFiles/prime_base.dir/root/prime/base/Thread.o.provides.build: CMakeFiles/prime_base.dir/root/prime/base/Thread.o
 
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: CMakeFiles/prime_base.dir/flags.make
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o: /root/prime/base/ThreadPool.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/net/tests/build/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o -c /root/prime/base/ThreadPool.cc
-
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/base/ThreadPool.cc > CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.i
-
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/base/ThreadPool.cc -o CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.s
-
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o.requires:
-.PHONY : CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o.requires
-
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o.provides: CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o.requires
-	$(MAKE) -f CMakeFiles/prime_base.dir/build.make CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o.provides.build
-.PHONY : CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o.provides
-
-CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o.provides.build: CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o
-
 # Object files for target prime_base
 prime_base_OBJECTS = \
 "CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o" \
@@ -385,8 +362,7 @@ prime_base_OBJECTS = \
 "CMakeFiles/prime_base.dir/root/prime/base/ProcessInfo.o" \
 "CMakeFiles/prime_base.dir/root/prime/base/Timestamp.o" \
 "CMakeFiles/prime_base.dir/root/prime/base/TimeZone.o" \
-"CMakeFiles/prime_base.dir/root/prime/base/Thread.o" \
-"CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o"
+"CMakeFiles/prime_base.dir/root/prime/base/Thread.o"
 
 # External object files for target prime_base
 prime_base_EXTERNAL_OBJECTS =
@@ -404,7 +380,6 @@ libprime_base.a: CMakeFiles/prime_base.dir/root/prime/base/ProcessInfo.o
 libprime_base.a: CMakeFiles/prime_base.dir/root/prime/base/Timestamp.o
 libprime_base.a: CMakeFiles/prime_base.dir/root/prime/base/TimeZone.o
 libprime_base.a: CMakeFiles/prime_base.dir/root/prime/base/Thread.o
-libprime_base.a: CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o
 libprime_base.a: CMakeFiles/prime_base.dir/build.make
 libprime_base.a: CMakeFiles/prime_base.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libprime_base.a"
@@ -428,7 +403,6 @@ CMakeFiles/prime_base.dir/requires: CMakeFiles/prime_base.dir/root/prime/base/Pr
 CMakeFiles/prime_base.dir/requires: CMakeFiles/prime_base.dir/root/prime/base/Timestamp.o.requires
 CMakeFiles/prime_base.dir/requires: CMakeFiles/prime_base.dir/root/prime/base/TimeZone.o.requires
 CMakeFiles/prime_base.dir/requires: CMakeFiles/prime_base.dir/root/prime/base/Thread.o.requires
-CMakeFiles/prime_base.dir/requires: CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o.requires
 .PHONY : CMakeFiles/prime_base.dir/requires
 
 CMakeFiles/prime_base.dir/clean:

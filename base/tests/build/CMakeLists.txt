@@ -6,8 +6,6 @@ set(net_SRCS
   /root/prime/net/Channel.cc
   /root/prime/net/Connector.cc
   /root/prime/net/EventLoop.cc
-  /root/prime/net/EventLoopThread.cc
-  /root/prime/net/EventLoopThreadPool.cc
   /root/prime/net/InetAddress.cc
   /root/prime/net/Poller.cc
   /root/prime/net/poller/DefaultPoller.cc
@@ -36,7 +34,6 @@ set(base_SRCS
   /root/prime/base/Timestamp.cc
   /root/prime/base/TimeZone.cc
   /root/prime/base/Thread.cc
-  /root/prime/base/ThreadPool.cc
   )
 
 set(CXX_FLAGS
@@ -132,6 +129,4 @@ target_link_libraries(thread_bench prime_base)
 add_executable(thread_test ../Thread_test.cc)
 target_link_libraries(thread_test prime_base)
 
-add_executable(threadpool_test ../ThreadPool_test.cc)
-target_link_libraries(threadpool_test prime_base)
 

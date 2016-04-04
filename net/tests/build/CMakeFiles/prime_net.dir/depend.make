@@ -75,35 +75,6 @@ CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/net/SocketsOps.
 CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/net/TimerId.h
 CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/net/TimerQueue.h
 
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/base/Atomic.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/base/Condition.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/base/CurrentThread.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/base/Mutex.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/base/Thread.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/base/Timestamp.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/base/Types.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/base/copyable.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/net/Callbacks.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/net/EventLoop.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/net/EventLoopThread.cc
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/net/EventLoopThread.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o: /root/prime/net/TimerId.h
-
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/base/Atomic.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/base/Condition.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/base/CurrentThread.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/base/Mutex.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/base/Thread.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/base/Timestamp.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/base/Types.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/base/copyable.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/net/Callbacks.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/net/EventLoop.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/net/EventLoopThread.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/net/EventLoopThreadPool.cc
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/net/EventLoopThreadPool.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o: /root/prime/net/TimerId.h
-
 CMakeFiles/prime_net.dir/root/prime/net/InetAddress.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_net.dir/root/prime/net/InetAddress.o: /root/prime/base/Logging.h
 CMakeFiles/prime_net.dir/root/prime/net/InetAddress.o: /root/prime/base/StringPiece.h
@@ -203,7 +174,6 @@ CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o: /root/prime/net/Callbacks.h
 CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o: /root/prime/net/Channel.h
 CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o: /root/prime/net/Endian.h
 CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o: /root/prime/net/EventLoop.h
-CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o: /root/prime/net/EventLoopThreadPool.h
 CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o: /root/prime/net/InetAddress.h
 CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o: /root/prime/net/Socket.h
 CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o: /root/prime/net/SocketsOps.h

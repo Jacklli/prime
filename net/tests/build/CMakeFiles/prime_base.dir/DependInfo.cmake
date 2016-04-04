@@ -15,7 +15,6 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/root/prime/base/Logging.cc" "/root/prime/net/tests/build/CMakeFiles/prime_base.dir/root/prime/base/Logging.o"
   "/root/prime/base/ProcessInfo.cc" "/root/prime/net/tests/build/CMakeFiles/prime_base.dir/root/prime/base/ProcessInfo.o"
   "/root/prime/base/Thread.cc" "/root/prime/net/tests/build/CMakeFiles/prime_base.dir/root/prime/base/Thread.o"
-  "/root/prime/base/ThreadPool.cc" "/root/prime/net/tests/build/CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o"
   "/root/prime/base/TimeZone.cc" "/root/prime/net/tests/build/CMakeFiles/prime_base.dir/root/prime/base/TimeZone.o"
   "/root/prime/base/Timestamp.cc" "/root/prime/net/tests/build/CMakeFiles/prime_base.dir/root/prime/base/Timestamp.o"
   )

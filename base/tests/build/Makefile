@@ -333,19 +333,6 @@ thread_test/fast:
 .PHONY : thread_test/fast
 
 #=============================================================================
-# Target rules for targets named threadpool_test
-
-# Build rule for target.
-threadpool_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 threadpool_test
-.PHONY : threadpool_test
-
-# fast build rule for target.
-threadpool_test/fast:
-	$(MAKE) -f CMakeFiles/threadpool_test.dir/build.make CMakeFiles/threadpool_test.dir/build
-.PHONY : threadpool_test/fast
-
-#=============================================================================
 # Target rules for targets named timestamp_unittest
 
 # Build rule for target.
@@ -535,21 +522,6 @@ root/prime/base/Thread.i:
 root/prime/base/Thread.s:
 	$(MAKE) -f CMakeFiles/prime_base.dir/build.make CMakeFiles/prime_base.dir/root/prime/base/Thread.s
 .PHONY : root/prime/base/Thread.s
-
-# target to build an object file
-root/prime/base/ThreadPool.o:
-	$(MAKE) -f CMakeFiles/prime_base.dir/build.make CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o
-.PHONY : root/prime/base/ThreadPool.o
-
-# target to preprocess a source file
-root/prime/base/ThreadPool.i:
-	$(MAKE) -f CMakeFiles/prime_base.dir/build.make CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.i
-.PHONY : root/prime/base/ThreadPool.i
-
-# target to generate assembly for a file
-root/prime/base/ThreadPool.s:
-	$(MAKE) -f CMakeFiles/prime_base.dir/build.make CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.s
-.PHONY : root/prime/base/ThreadPool.s
 
 # target to build an object file
 root/prime/base/TimeZone.o:
@@ -792,21 +764,6 @@ root/prime/base/tests/ProcessInfo_test.s:
 .PHONY : root/prime/base/tests/ProcessInfo_test.s
 
 # target to build an object file
-root/prime/base/tests/ThreadPool_test.o:
-	$(MAKE) -f CMakeFiles/threadpool_test.dir/build.make CMakeFiles/threadpool_test.dir/root/prime/base/tests/ThreadPool_test.o
-.PHONY : root/prime/base/tests/ThreadPool_test.o
-
-# target to preprocess a source file
-root/prime/base/tests/ThreadPool_test.i:
-	$(MAKE) -f CMakeFiles/threadpool_test.dir/build.make CMakeFiles/threadpool_test.dir/root/prime/base/tests/ThreadPool_test.i
-.PHONY : root/prime/base/tests/ThreadPool_test.i
-
-# target to generate assembly for a file
-root/prime/base/tests/ThreadPool_test.s:
-	$(MAKE) -f CMakeFiles/threadpool_test.dir/build.make CMakeFiles/threadpool_test.dir/root/prime/base/tests/ThreadPool_test.s
-.PHONY : root/prime/base/tests/ThreadPool_test.s
-
-# target to build an object file
 root/prime/base/tests/Thread_bench.o:
 	$(MAKE) -f CMakeFiles/thread_bench.dir/build.make CMakeFiles/thread_bench.dir/root/prime/base/tests/Thread_bench.o
 .PHONY : root/prime/base/tests/Thread_bench.o
@@ -940,36 +897,6 @@ root/prime/net/EventLoop.i:
 root/prime/net/EventLoop.s:
 	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/root/prime/net/EventLoop.s
 .PHONY : root/prime/net/EventLoop.s
-
-# target to build an object file
-root/prime/net/EventLoopThread.o:
-	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o
-.PHONY : root/prime/net/EventLoopThread.o
-
-# target to preprocess a source file
-root/prime/net/EventLoopThread.i:
-	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.i
-.PHONY : root/prime/net/EventLoopThread.i
-
-# target to generate assembly for a file
-root/prime/net/EventLoopThread.s:
-	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.s
-.PHONY : root/prime/net/EventLoopThread.s
-
-# target to build an object file
-root/prime/net/EventLoopThreadPool.o:
-	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o
-.PHONY : root/prime/net/EventLoopThreadPool.o
-
-# target to preprocess a source file
-root/prime/net/EventLoopThreadPool.i:
-	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.i
-.PHONY : root/prime/net/EventLoopThreadPool.i
-
-# target to generate assembly for a file
-root/prime/net/EventLoopThreadPool.s:
-	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.s
-.PHONY : root/prime/net/EventLoopThreadPool.s
 
 # target to build an object file
 root/prime/net/InetAddress.o:
@@ -1177,7 +1104,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... thread_bench"
 	@echo "... thread_test"
-	@echo "... threadpool_test"
 	@echo "... timestamp_unittest"
 	@echo "... timezone_unittest"
 	@echo "... root/prime/base/AsyncLogging.o"
@@ -1213,9 +1139,6 @@ help:
 	@echo "... root/prime/base/Thread.o"
 	@echo "... root/prime/base/Thread.i"
 	@echo "... root/prime/base/Thread.s"
-	@echo "... root/prime/base/ThreadPool.o"
-	@echo "... root/prime/base/ThreadPool.i"
-	@echo "... root/prime/base/ThreadPool.s"
 	@echo "... root/prime/base/TimeZone.o"
 	@echo "... root/prime/base/TimeZone.i"
 	@echo "... root/prime/base/TimeZone.s"
@@ -1264,9 +1187,6 @@ help:
 	@echo "... root/prime/base/tests/ProcessInfo_test.o"
 	@echo "... root/prime/base/tests/ProcessInfo_test.i"
 	@echo "... root/prime/base/tests/ProcessInfo_test.s"
-	@echo "... root/prime/base/tests/ThreadPool_test.o"
-	@echo "... root/prime/base/tests/ThreadPool_test.i"
-	@echo "... root/prime/base/tests/ThreadPool_test.s"
 	@echo "... root/prime/base/tests/Thread_bench.o"
 	@echo "... root/prime/base/tests/Thread_bench.i"
 	@echo "... root/prime/base/tests/Thread_bench.s"
@@ -1294,12 +1214,6 @@ help:
 	@echo "... root/prime/net/EventLoop.o"
 	@echo "... root/prime/net/EventLoop.i"
 	@echo "... root/prime/net/EventLoop.s"
-	@echo "... root/prime/net/EventLoopThread.o"
-	@echo "... root/prime/net/EventLoopThread.i"
-	@echo "... root/prime/net/EventLoopThread.s"
-	@echo "... root/prime/net/EventLoopThreadPool.o"
-	@echo "... root/prime/net/EventLoopThreadPool.i"
-	@echo "... root/prime/net/EventLoopThreadPool.s"
 	@echo "... root/prime/net/InetAddress.o"
 	@echo "... root/prime/net/InetAddress.i"
 	@echo "... root/prime/net/InetAddress.s"

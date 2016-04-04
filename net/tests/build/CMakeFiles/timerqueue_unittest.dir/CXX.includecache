@@ -12,14 +12,6 @@ boost/noncopyable.hpp
 stdint.h
 -
 
-/root/prime/base/Condition.h
-prime/base/Mutex.h
--
-boost/noncopyable.hpp
--
-pthread.h
--
-
 /root/prime/base/CurrentThread.h
 stdint.h
 -
@@ -98,24 +90,12 @@ prime/net/Callbacks.h
 prime/net/TimerId.h
 -
 
-/root/prime/net/EventLoopThread.h
-prime/base/Condition.h
--
-prime/base/Mutex.h
--
-prime/base/Thread.h
--
-boost/noncopyable.hpp
--
-
 /root/prime/net/TimerId.h
 prime/base/copyable.h
 -
 
 /root/prime/net/tests/TimerQueue_unittest.cc
 prime/net/EventLoop.h
--
-prime/net/EventLoopThread.h
 -
 prime/base/Thread.h
 -

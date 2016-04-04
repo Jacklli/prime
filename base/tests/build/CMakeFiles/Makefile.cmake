@@ -57,7 +57,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/processinfo_test.dir/DependInfo.cmake"
   "CMakeFiles/thread_bench.dir/DependInfo.cmake"
   "CMakeFiles/thread_test.dir/DependInfo.cmake"
-  "CMakeFiles/threadpool_test.dir/DependInfo.cmake"
   "CMakeFiles/timestamp_unittest.dir/DependInfo.cmake"
   "CMakeFiles/timezone_unittest.dir/DependInfo.cmake"
   )

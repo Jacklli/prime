@@ -9,8 +9,6 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/root/prime/net/Channel.cc" "/root/prime/net/tests/build/CMakeFiles/prime_net.dir/root/prime/net/Channel.o"
   "/root/prime/net/Connector.cc" "/root/prime/net/tests/build/CMakeFiles/prime_net.dir/root/prime/net/Connector.o"
   "/root/prime/net/EventLoop.cc" "/root/prime/net/tests/build/CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o"
-  "/root/prime/net/EventLoopThread.cc" "/root/prime/net/tests/build/CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o"
-  "/root/prime/net/EventLoopThreadPool.cc" "/root/prime/net/tests/build/CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o"
   "/root/prime/net/InetAddress.cc" "/root/prime/net/tests/build/CMakeFiles/prime_net.dir/root/prime/net/InetAddress.o"
   "/root/prime/net/Poller.cc" "/root/prime/net/tests/build/CMakeFiles/prime_net.dir/root/prime/net/Poller.o"
   "/root/prime/net/Socket.cc" "/root/prime/net/tests/build/CMakeFiles/prime_net.dir/root/prime/net/Socket.o"

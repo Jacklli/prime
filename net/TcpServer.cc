@@ -11,7 +11,6 @@
 #include <prime/base/Logging.h>
 #include <prime/net/Acceptor.h>
 #include <prime/net/EventLoop.h>
-#include <prime/net/EventLoopThreadPool.h>
 #include <prime/net/SocketsOps.h>
 
 #include <boost/bind.hpp>
@@ -29,7 +28,6 @@ TcpServer::TcpServer(EventLoop* loop,
     hostport_(listenAddr.toIpPort()),
     name_(nameArg),
     acceptor_(new Acceptor(loop, listenAddr, option == kReusePort)),
-    threadPool_(new EventLoopThreadPool(loop)),
     connectionCallback_(defaultConnectionCallback),
     messageCallback_(defaultMessageCallback),
     nextConnId_(1)
@@ -54,17 +52,11 @@ TcpServer::~TcpServer()
   }
 }
 
-void TcpServer::setThreadNum(int numThreads)
-{
-  assert(0 <= numThreads);
-  threadPool_->setThreadNum(numThreads);
-}
-
 void TcpServer::start()
 {
   if (started_.getAndSet(1) == 0)
   {
-    threadPool_->start(threadInitCallback_);
+//    threadPool_->start(threadInitCallback_);
 
     assert(!acceptor_->listenning());
     loop_->runInLoop(
@@ -75,7 +67,8 @@ void TcpServer::start()
 void TcpServer::newConnection(int sockfd, const InetAddress& peerAddr)
 {
   loop_->assertInLoopThread();
-  EventLoop* ioLoop = threadPool_->getNextLoop();
+//  EventLoop* ioLoop = threadPool_->getNextLoop();
+  EventLoop *ioLoop = loop_;
   char buf[32];
   snprintf(buf, sizeof buf, ":%s#%d", hostport_.c_str(), nextConnId_);
   ++nextConnId_;

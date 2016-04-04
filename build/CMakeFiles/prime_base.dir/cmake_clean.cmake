@@ -12,7 +12,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/prime_base.dir/root/prime/base/Timestamp.o"
   "CMakeFiles/prime_base.dir/root/prime/base/TimeZone.o"
   "CMakeFiles/prime_base.dir/root/prime/base/Thread.o"
-  "CMakeFiles/prime_base.dir/root/prime/base/ThreadPool.o"
   "libprime_base.pdb"
   "libprime_base.a"
 )

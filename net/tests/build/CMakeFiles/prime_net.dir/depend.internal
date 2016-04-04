@@ -75,35 +75,6 @@ CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o
  /root/prime/net/SocketsOps.h
  /root/prime/net/TimerId.h
  /root/prime/net/TimerQueue.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThread.o
- /root/prime/base/Atomic.h
- /root/prime/base/Condition.h
- /root/prime/base/CurrentThread.h
- /root/prime/base/Mutex.h
- /root/prime/base/Thread.h
- /root/prime/base/Timestamp.h
- /root/prime/base/Types.h
- /root/prime/base/copyable.h
- /root/prime/net/Callbacks.h
- /root/prime/net/EventLoop.h
- /root/prime/net/EventLoopThread.cc
- /root/prime/net/EventLoopThread.h
- /root/prime/net/TimerId.h
-CMakeFiles/prime_net.dir/root/prime/net/EventLoopThreadPool.o
- /root/prime/base/Atomic.h
- /root/prime/base/Condition.h
- /root/prime/base/CurrentThread.h
- /root/prime/base/Mutex.h
- /root/prime/base/Thread.h
- /root/prime/base/Timestamp.h
- /root/prime/base/Types.h
- /root/prime/base/copyable.h
- /root/prime/net/Callbacks.h
- /root/prime/net/EventLoop.h
- /root/prime/net/EventLoopThread.h
- /root/prime/net/EventLoopThreadPool.cc
- /root/prime/net/EventLoopThreadPool.h
- /root/prime/net/TimerId.h
 CMakeFiles/prime_net.dir/root/prime/net/InetAddress.o
  /root/prime/base/LogStream.h
  /root/prime/base/Logging.h
@@ -204,7 +175,6 @@ CMakeFiles/prime_net.dir/root/prime/net/TcpServer.o
  /root/prime/net/Channel.h
  /root/prime/net/Endian.h
  /root/prime/net/EventLoop.h
- /root/prime/net/EventLoopThreadPool.h
  /root/prime/net/InetAddress.h
  /root/prime/net/Socket.h
  /root/prime/net/SocketsOps.h

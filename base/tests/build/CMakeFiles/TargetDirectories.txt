@@ -16,6 +16,5 @@
 /root/prime/base/tests/build/CMakeFiles/processinfo_test.dir
 /root/prime/base/tests/build/CMakeFiles/thread_bench.dir
 /root/prime/base/tests/build/CMakeFiles/thread_test.dir
-/root/prime/base/tests/build/CMakeFiles/threadpool_test.dir
 /root/prime/base/tests/build/CMakeFiles/timestamp_unittest.dir
 /root/prime/base/tests/build/CMakeFiles/timezone_unittest.dir

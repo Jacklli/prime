@@ -3,7 +3,6 @@
 
 CMakeFiles/timerqueue_unittest.dir/root/prime/net/tests/TimerQueue_unittest.o
  /root/prime/base/Atomic.h
- /root/prime/base/Condition.h
  /root/prime/base/CurrentThread.h
  /root/prime/base/Mutex.h
  /root/prime/base/Thread.h
@@ -12,6 +11,5 @@ CMakeFiles/timerqueue_unittest.dir/root/prime/net/tests/TimerQueue_unittest.o
  /root/prime/base/copyable.h
  /root/prime/net/Callbacks.h
  /root/prime/net/EventLoop.h
- /root/prime/net/EventLoopThread.h
  /root/prime/net/TimerId.h
  /root/prime/net/tests/TimerQueue_unittest.cc

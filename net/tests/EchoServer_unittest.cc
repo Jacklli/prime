@@ -15,8 +15,6 @@
 using namespace prime;
 using namespace prime::net;
 
-int numThreads = 0;
-
 class EchoServer
 {
  public:
@@ -28,7 +26,6 @@ class EchoServer
         boost::bind(&EchoServer::onConnection, this, _1));
     server_.setMessageCallback(
         boost::bind(&EchoServer::onMessage, this, _1, _2, _3));
-    server_.setThreadNum(numThreads);
   }
 
   void start()
@@ -71,10 +68,6 @@ int main(int argc, char* argv[])
 {
   LOG_INFO << "pid = " << getpid() << ", tid = " << CurrentThread::tid();
   LOG_INFO << "sizeof TcpConnection = " << sizeof(TcpConnection);
-  if (argc > 1)
-  {
-    numThreads = atoi(argv[1]);
-  }
   EventLoop loop;
   InetAddress listenAddr(2000);
   EchoServer server(&loop, listenAddr);

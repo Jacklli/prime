@@ -7,6 +7,7 @@ CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o
  /root/prime/base/LogStream.h
  /root/prime/base/Logging.h
  /root/prime/base/Mutex.h
+ /root/prime/base/StringPiece.h
  /root/prime/base/TimeZone.h
  /root/prime/base/Timestamp.h
  /root/prime/base/Types.h

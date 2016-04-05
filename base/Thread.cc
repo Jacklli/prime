@@ -38,27 +38,6 @@ pid_t gettid()
   return static_cast<pid_t>(::syscall(SYS_gettid));
 }
 
-void afterFork()
-{
-  prime::CurrentThread::t_cachedTid = 0;
-  prime::CurrentThread::t_threadName = "main";
-  CurrentThread::tid();
-  // no need to call pthread_atfork(NULL, NULL, &afterFork);
-}
-
-class ThreadNameInitializer
-{
- public:
-  ThreadNameInitializer()
-  {
-    prime::CurrentThread::t_threadName = "main";
-    CurrentThread::tid();
-    pthread_atfork(NULL, NULL, &afterFork);
-  }
-};
-
-ThreadNameInitializer init;
-
 struct ThreadData
 {
   typedef prime::Thread::ThreadFunc ThreadFunc;
@@ -141,14 +120,6 @@ void CurrentThread::cacheTid()
 bool CurrentThread::isMainThread()
 {
   return tid() == ::getpid();
-}
-
-void CurrentThread::sleepUsec(int64_t usec)
-{
-  struct timespec ts = { 0, 0 };
-  ts.tv_sec = static_cast<time_t>(usec / Timestamp::kMicroSecondsPerSecond);
-  ts.tv_nsec = static_cast<long>(usec % Timestamp::kMicroSecondsPerSecond * 1000);
-  ::nanosleep(&ts, NULL);
 }
 
 AtomicInt32 Thread::numCreated_;

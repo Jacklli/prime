@@ -31,6 +31,7 @@ CMakeFiles/prime_net.dir/root/prime/net/Channel.o: /root/prime/base/CurrentThrea
 CMakeFiles/prime_net.dir/root/prime/net/Channel.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_net.dir/root/prime/net/Channel.o: /root/prime/base/Logging.h
 CMakeFiles/prime_net.dir/root/prime/net/Channel.o: /root/prime/base/Mutex.h
+CMakeFiles/prime_net.dir/root/prime/net/Channel.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_net.dir/root/prime/net/Channel.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_net.dir/root/prime/net/Channel.o: /root/prime/base/Types.h
 CMakeFiles/prime_net.dir/root/prime/net/Channel.o: /root/prime/base/copyable.h
@@ -61,6 +62,7 @@ CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/base/CurrentThr
 CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/base/Logging.h
 CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/base/Mutex.h
+CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/base/Types.h
 CMakeFiles/prime_net.dir/root/prime/net/EventLoop.o: /root/prime/base/copyable.h
@@ -108,6 +110,7 @@ CMakeFiles/prime_net.dir/root/prime/net/Socket.o: /root/prime/net/SocketsOps.h
 
 CMakeFiles/prime_net.dir/root/prime/net/SocketsOps.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_net.dir/root/prime/net/SocketsOps.o: /root/prime/base/Logging.h
+CMakeFiles/prime_net.dir/root/prime/net/SocketsOps.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_net.dir/root/prime/net/SocketsOps.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_net.dir/root/prime/net/SocketsOps.o: /root/prime/base/Types.h
 CMakeFiles/prime_net.dir/root/prime/net/SocketsOps.o: /root/prime/base/copyable.h
@@ -192,6 +195,7 @@ CMakeFiles/prime_net.dir/root/prime/net/TimerQueue.o: /root/prime/base/CurrentTh
 CMakeFiles/prime_net.dir/root/prime/net/TimerQueue.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_net.dir/root/prime/net/TimerQueue.o: /root/prime/base/Logging.h
 CMakeFiles/prime_net.dir/root/prime/net/TimerQueue.o: /root/prime/base/Mutex.h
+CMakeFiles/prime_net.dir/root/prime/net/TimerQueue.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_net.dir/root/prime/net/TimerQueue.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_net.dir/root/prime/net/TimerQueue.o: /root/prime/base/Types.h
 CMakeFiles/prime_net.dir/root/prime/net/TimerQueue.o: /root/prime/base/copyable.h
@@ -220,6 +224,7 @@ CMakeFiles/prime_net.dir/root/prime/net/poller/EPollPoller.o: /root/prime/base/C
 CMakeFiles/prime_net.dir/root/prime/net/poller/EPollPoller.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/EPollPoller.o: /root/prime/base/Logging.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/EPollPoller.o: /root/prime/base/Mutex.h
+CMakeFiles/prime_net.dir/root/prime/net/poller/EPollPoller.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/EPollPoller.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/EPollPoller.o: /root/prime/base/Types.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/EPollPoller.o: /root/prime/base/copyable.h
@@ -235,6 +240,7 @@ CMakeFiles/prime_net.dir/root/prime/net/poller/PollPoller.o: /root/prime/base/Cu
 CMakeFiles/prime_net.dir/root/prime/net/poller/PollPoller.o: /root/prime/base/LogStream.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/PollPoller.o: /root/prime/base/Logging.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/PollPoller.o: /root/prime/base/Mutex.h
+CMakeFiles/prime_net.dir/root/prime/net/poller/PollPoller.o: /root/prime/base/StringPiece.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/PollPoller.o: /root/prime/base/Timestamp.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/PollPoller.o: /root/prime/base/Types.h
 CMakeFiles/prime_net.dir/root/prime/net/poller/PollPoller.o: /root/prime/base/copyable.h

@@ -6,6 +6,7 @@ CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o: /root/prime/ba
 CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o: /root/prime/base/LogStream.h
 CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o: /root/prime/base/Logging.h
 CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o: /root/prime/base/Mutex.h
+CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o: /root/prime/base/StringPiece.h
 CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o: /root/prime/base/TimeZone.h
 CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o: /root/prime/base/Timestamp.h
 CMakeFiles/logging_test.dir/root/prime/base/tests/Logging_test.o: /root/prime/base/Types.h

@@ -38,6 +38,7 @@ pid_t gettid()
   return static_cast<pid_t>(::syscall(SYS_gettid));
 }
 
+/*
 struct ThreadData
 {
   typedef prime::Thread::ThreadFunc ThreadFunc;
@@ -53,7 +54,14 @@ struct ThreadData
       wkTid_(tid)
   { }
 
-  void runInThread()
+*/
+
+typedef prime::Thread::ThreadFunc ThreadFunc;
+ThreadFunc func_;
+string name_;
+boost::weak_ptr<pid_t> wkTid_;
+
+  void *runInThread(void *)
   {
     pid_t tid = prime::CurrentThread::tid();
 
@@ -91,9 +99,13 @@ struct ThreadData
       fprintf(stderr, "unknown exception caught in Thread %s\n", name_.c_str());
       throw; // rethrow
     }
+      return NULL;
   }
+/*
 };
+*/
 
+/*
 void* startThread(void* obj)
 {
   ThreadData* data = static_cast<ThreadData*>(obj);
@@ -102,6 +114,7 @@ void* startThread(void* obj)
   return NULL;
 }
 
+*/
 }
 }
 
@@ -122,7 +135,7 @@ bool CurrentThread::isMainThread()
   return tid() == ::getpid();
 }
 
-AtomicInt32 Thread::numCreated_;
+AtomicInt32 Thread::numCreated_; //init it
 
 Thread::Thread(const ThreadFunc& func, const string& n)
   : started_(false),
@@ -148,11 +161,12 @@ void Thread::start()
   assert(!started_);
   started_ = true;
   // FIXME: move(func_)
-  detail::ThreadData* data = new detail::ThreadData(func_, name_, tid_);
-  if (pthread_create(&pthreadId_, NULL, &detail::startThread, data))
+//  detail::ThreadData* data = new detail::ThreadData(func_, name_, tid_);
+//  if (pthread_create(&pthreadId_, NULL, &detail::startThread, data))
+if (pthread_create(&pthreadId_, NULL, &detail::runInThread, NULL))
   {
     started_ = false;
-    delete data; // or no delete?
+//    delete data; // or no delete?
     LOG_SYSFATAL << "Failed in pthread_create";
   }
 }

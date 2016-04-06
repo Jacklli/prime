@@ -39,6 +39,28 @@ pid_t gettid()
 }
 
 /*
+void afterFork()
+{
+  prime::CurrentThread::t_cachedTid = 0;
+  prime::CurrentThread::t_threadName = "main";
+  CurrentThread::tid();
+  // no need to call pthread_atfork(NULL, NULL, &afterFork);
+}
+
+class ThreadNameInitializer
+{
+ public:
+  ThreadNameInitializer()
+  {
+    prime::CurrentThread::t_threadName = "main";
+    CurrentThread::tid();
+    pthread_atfork(NULL, NULL, &afterFork);
+  }
+};
+
+ThreadNameInitializer init;
+
+*/
 struct ThreadData
 {
   typedef prime::Thread::ThreadFunc ThreadFunc;
@@ -54,14 +76,7 @@ struct ThreadData
       wkTid_(tid)
   { }
 
-*/
-
-typedef prime::Thread::ThreadFunc ThreadFunc;
-ThreadFunc func_;
-string name_;
-boost::weak_ptr<pid_t> wkTid_;
-
-  void *runInThread(void *)
+  void runInThread()
   {
     pid_t tid = prime::CurrentThread::tid();
 
@@ -99,13 +114,9 @@ boost::weak_ptr<pid_t> wkTid_;
       fprintf(stderr, "unknown exception caught in Thread %s\n", name_.c_str());
       throw; // rethrow
     }
-      return NULL;
   }
-/*
 };
-*/
 
-/*
 void* startThread(void* obj)
 {
   ThreadData* data = static_cast<ThreadData*>(obj);
@@ -114,7 +125,6 @@ void* startThread(void* obj)
   return NULL;
 }
 
-*/
 }
 }
 
@@ -135,7 +145,17 @@ bool CurrentThread::isMainThread()
   return tid() == ::getpid();
 }
 
-AtomicInt32 Thread::numCreated_; //init it
+/*
+void CurrentThread::sleepUsec(int64_t usec)
+{
+  struct timespec ts = { 0, 0 };
+  ts.tv_sec = static_cast<time_t>(usec / Timestamp::kMicroSecondsPerSecond);
+  ts.tv_nsec = static_cast<long>(usec % Timestamp::kMicroSecondsPerSecond * 1000);
+  ::nanosleep(&ts, NULL);
+}
+*/
+
+AtomicInt32 Thread::numCreated_;
 
 Thread::Thread(const ThreadFunc& func, const string& n)
   : started_(false),
@@ -147,6 +167,20 @@ Thread::Thread(const ThreadFunc& func, const string& n)
 {
   numCreated_.increment();
 }
+
+#ifdef __GXX_EXPERIMENTAL_CXX0X__
+Thread::Thread(ThreadFunc&& func, const string& n)
+  : started_(false),
+    joined_(false),
+    pthreadId_(0),
+    tid_(new pid_t(0)),
+    func_(std::move(func)),
+    name_(n)
+{
+  numCreated_.increment();
+}
+
+#endif
 
 Thread::~Thread()
 {
@@ -161,12 +195,11 @@ void Thread::start()
   assert(!started_);
   started_ = true;
   // FIXME: move(func_)
-//  detail::ThreadData* data = new detail::ThreadData(func_, name_, tid_);
-//  if (pthread_create(&pthreadId_, NULL, &detail::startThread, data))
-if (pthread_create(&pthreadId_, NULL, &detail::runInThread, NULL))
+  detail::ThreadData* data = new detail::ThreadData(func_, name_, tid_);
+  if (pthread_create(&pthreadId_, NULL, &detail::startThread, data))
   {
     started_ = false;
-//    delete data; // or no delete?
+    delete data; // or no delete?
     LOG_SYSFATAL << "Failed in pthread_create";
   }
 }

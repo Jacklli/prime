@@ -61,9 +61,10 @@ class ThreadNameInitializer
 ThreadNameInitializer init;
 
 */
-struct ThreadData
+class ThreadData
 {
   typedef prime::Thread::ThreadFunc ThreadFunc;
+public:
   ThreadFunc func_;
   string name_;
   boost::weak_ptr<pid_t> wkTid_;

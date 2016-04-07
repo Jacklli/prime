@@ -37,6 +37,8 @@ namespace CurrentThread
     return t_threadName;
   }
 
+  void sleepUsec(int64_t usec);
+
   bool isMainThread();
 }
 }

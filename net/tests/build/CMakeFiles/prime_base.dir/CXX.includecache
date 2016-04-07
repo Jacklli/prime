@@ -17,10 +17,6 @@ stdio.h
 -
 
 /root/prime/base/AsyncLogging.h
-prime/base/BlockingQueue.h
--
-prime/base/BoundedBlockingQueue.h
--
 prime/base/CountDownLatch.h
 -
 prime/base/Mutex.h
@@ -42,30 +38,6 @@ boost/ptr_container/ptr_vector.hpp
 boost/noncopyable.hpp
 -
 stdint.h
--
-
-/root/prime/base/BlockingQueue.h
-prime/base/Condition.h
--
-prime/base/Mutex.h
--
-boost/noncopyable.hpp
--
-deque
--
-assert.h
--
-
-/root/prime/base/BoundedBlockingQueue.h
-prime/base/Condition.h
--
-prime/base/Mutex.h
--
-boost/circular_buffer.hpp
--
-boost/noncopyable.hpp
--
-assert.h
 -
 
 /root/prime/base/Condition.cc
@@ -148,6 +120,24 @@ string
 boost/noncopyable.hpp
 -
 
+/root/prime/base/Logging.cc
+prime/base/Logging.h
+-
+prime/base/CurrentThread.h
+-
+prime/base/Timestamp.h
+-
+prime/base/TimeZone.h
+-
+errno.h
+-
+stdio.h
+-
+string.h
+-
+sstream
+-
+
 /root/prime/base/Logging.h
 prime/base/LogStream.h
 -
@@ -222,6 +212,14 @@ boost/noncopyable.hpp
 boost/shared_ptr.hpp
 -
 pthread.h
+-
+
+/root/prime/base/TimeZone.h
+prime/base/copyable.h
+-
+boost/shared_ptr.hpp
+-
+time.h
 -
 
 /root/prime/base/Timestamp.h

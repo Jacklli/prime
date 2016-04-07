@@ -146,7 +146,6 @@ bool CurrentThread::isMainThread()
   return tid() == ::getpid();
 }
 
-/*
 void CurrentThread::sleepUsec(int64_t usec)
 {
   struct timespec ts = { 0, 0 };
@@ -154,7 +153,6 @@ void CurrentThread::sleepUsec(int64_t usec)
   ts.tv_nsec = static_cast<long>(usec % Timestamp::kMicroSecondsPerSecond * 1000);
   ::nanosleep(&ts, NULL);
 }
-*/
 
 AtomicInt32 Thread::numCreated_;
 

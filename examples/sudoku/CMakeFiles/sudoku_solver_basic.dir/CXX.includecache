@@ -115,15 +115,7 @@ stdio.h
 -
 unistd.h
 -
-
-/root/prime/examples/sudoku/sudoku.cc
-sudoku.h
-/root/prime/examples/sudoku/sudoku.h
-vector
--
-assert.h
--
-string.h
+iostream
 -
 
 /root/prime/examples/sudoku/sudoku.h

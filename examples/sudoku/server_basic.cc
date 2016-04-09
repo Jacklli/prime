@@ -14,6 +14,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
+#include <iostream>
+
 using namespace prime;
 using namespace prime::net;
 
@@ -45,16 +47,21 @@ class SudokuServer
 
   void onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp)
   {
+   std::cout << "start read";
     LOG_DEBUG << conn->name();
     size_t len = buf->readableBytes();
+
+
     while (len >= kCells + 2)
     {
-      const char* crlf = buf->findCRLF();
+      const char* crlf = buf->findCRLF("\n");
+    std::cout << "not found CRLF";
       if (crlf)
       {
         string request(buf->peek(), crlf);
         buf->retrieveUntil(crlf + 2);
         len = buf->readableBytes();
+    std::cout << request.data();
         if (!processRequest(conn, request))
         {
           conn->send("Bad Request!\r\n");

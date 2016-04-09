@@ -1,0 +1,9 @@
+/root/prime/examples/CMakeFiles/prime_base.dir
+/root/prime/examples/CMakeFiles/prime_net.dir
+/root/prime/examples/CMakeFiles/simple_chargen.dir
+/root/prime/examples/CMakeFiles/simple_chargenclient.dir
+/root/prime/examples/CMakeFiles/simple_daytime.dir
+/root/prime/examples/CMakeFiles/simple_discard.dir
+/root/prime/examples/CMakeFiles/simple_echo.dir
+/root/prime/examples/CMakeFiles/simple_time.dir
+/root/prime/examples/CMakeFiles/simple_timeclient.dir

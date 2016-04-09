@@ -1,2 +1,0 @@
-/root/prime/build/CMakeFiles/prime_base.dir
-/root/prime/build/CMakeFiles/prime_net.dir

@@ -10,8 +10,8 @@ CMakeFiles/sudoku_client.dir/client.o
  /root/prime/base/Timestamp.h
  /root/prime/base/Types.h
  /root/prime/base/copyable.h
- /root/prime/examples/sudoku/client.cc
- /root/prime/examples/sudoku/sudoku.h
+ /root/prime/examples/pricache/client.cc
+ /root/prime/examples/pricache/sudoku.h
  /root/prime/net/Buffer.h
  /root/prime/net/Callbacks.h
  /root/prime/net/Endian.h
@@ -23,5 +23,5 @@ CMakeFiles/sudoku_client.dir/client.o
 CMakeFiles/sudoku_client.dir/sudoku.o
  /root/prime/base/StringPiece.h
  /root/prime/base/Types.h
- /root/prime/examples/sudoku/sudoku.cc
- /root/prime/examples/sudoku/sudoku.h
+ /root/prime/examples/pricache/sudoku.cc
+ /root/prime/examples/pricache/sudoku.h

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/prime/examples/sudoku
+CMAKE_SOURCE_DIR = /root/prime/examples/pricache
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/prime/examples/sudoku
+CMAKE_BINARY_DIR = /root/prime/examples/pricache
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sudoku_solver_multiloop.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/sudoku_solver_multiloop.dir/flags.make
 
 CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o: CMakeFiles/sudoku_solver_multiloop.dir/flags.make
 CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o: server_multiloop.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/pricache/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o -c /root/prime/examples/sudoku/server_multiloop.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o -c /root/prime/examples/pricache/server_multiloop.cc
 
 CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/sudoku/server_multiloop.cc > CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/pricache/server_multiloop.cc > CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.i
 
 CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/sudoku/server_multiloop.cc -o CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/pricache/server_multiloop.cc -o CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.s
 
 CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o.requires:
 .PHONY : CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o.provides.build: CMakeF
 
 CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o: CMakeFiles/sudoku_solver_multiloop.dir/flags.make
 CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o: sudoku.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/pricache/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o -c /root/prime/examples/sudoku/sudoku.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o -c /root/prime/examples/pricache/sudoku.cc
 
 CMakeFiles/sudoku_solver_multiloop.dir/sudoku.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku_solver_multiloop.dir/sudoku.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/sudoku/sudoku.cc > CMakeFiles/sudoku_solver_multiloop.dir/sudoku.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/pricache/sudoku.cc > CMakeFiles/sudoku_solver_multiloop.dir/sudoku.i
 
 CMakeFiles/sudoku_solver_multiloop.dir/sudoku.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku_solver_multiloop.dir/sudoku.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/sudoku/sudoku.cc -o CMakeFiles/sudoku_solver_multiloop.dir/sudoku.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/pricache/sudoku.cc -o CMakeFiles/sudoku_solver_multiloop.dir/sudoku.s
 
 CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o.requires:
 .PHONY : CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o.requires
@@ -125,6 +125,6 @@ CMakeFiles/sudoku_solver_multiloop.dir/clean:
 .PHONY : CMakeFiles/sudoku_solver_multiloop.dir/clean
 
 CMakeFiles/sudoku_solver_multiloop.dir/depend:
-	cd /root/prime/examples/sudoku && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/prime/examples/pricache && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache/CMakeFiles/sudoku_solver_multiloop.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sudoku_solver_multiloop.dir/depend
 

@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/prime/examples/sudoku
+CMAKE_SOURCE_DIR = /root/prime/examples/pricache
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/prime/examples/sudoku
+CMAKE_BINARY_DIR = /root/prime/examples/pricache
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/examples/sudoku/CMakeFiles /root/prime/examples/sudoku/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/examples/pricache/CMakeFiles /root/prime/examples/pricache/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/examples/sudoku/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/prime/examples/pricache/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -97,6 +97,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named pricache
+
+# Build rule for target.
+pricache: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pricache
+.PHONY : pricache
+
+# fast build rule for target.
+pricache/fast:
+	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/build
+.PHONY : pricache/fast
 
 #=============================================================================
 # Target rules for targets named prime_base
@@ -136,19 +149,6 @@ sudoku_client: cmake_check_build_system
 sudoku_client/fast:
 	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/build
 .PHONY : sudoku_client/fast
-
-#=============================================================================
-# Target rules for targets named sudoku_solver_basic
-
-# Build rule for target.
-sudoku_solver_basic: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sudoku_solver_basic
-.PHONY : sudoku_solver_basic
-
-# fast build rule for target.
-sudoku_solver_basic/fast:
-	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/build
-.PHONY : sudoku_solver_basic/fast
 
 #=============================================================================
 # Target rules for targets named sudoku_solver_multiloop
@@ -687,19 +687,19 @@ root/prime/net/poller/PollPoller.s:
 .PHONY : root/prime/net/poller/PollPoller.s
 
 # target to build an object file
-server_basic.o:
-	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/server_basic.o
-.PHONY : server_basic.o
+server.o:
+	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/server.o
+.PHONY : server.o
 
 # target to preprocess a source file
-server_basic.i:
-	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/server_basic.i
-.PHONY : server_basic.i
+server.i:
+	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/server.i
+.PHONY : server.i
 
 # target to generate assembly for a file
-server_basic.s:
-	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/server_basic.s
-.PHONY : server_basic.s
+server.s:
+	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/server.s
+.PHONY : server.s
 
 # target to build an object file
 server_multiloop.o:
@@ -733,24 +733,24 @@ server_threadpool.s:
 
 # target to build an object file
 sudoku.o:
+	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/sudoku.o
 	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/sudoku.o
-	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/sudoku.o
 	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o
 	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o
 .PHONY : sudoku.o
 
 # target to preprocess a source file
 sudoku.i:
+	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/sudoku.i
 	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/sudoku.i
-	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/sudoku.i
 	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/sudoku.i
 	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/sudoku.i
 .PHONY : sudoku.i
 
 # target to generate assembly for a file
 sudoku.s:
+	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/sudoku.s
 	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/sudoku.s
-	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/sudoku.s
 	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/sudoku.s
 	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/sudoku.s
 .PHONY : sudoku.s
@@ -762,11 +762,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... pricache"
 	@echo "... prime_base"
 	@echo "... prime_net"
 	@echo "... rebuild_cache"
 	@echo "... sudoku_client"
-	@echo "... sudoku_solver_basic"
 	@echo "... sudoku_solver_multiloop"
 	@echo "... sudoku_solver_threadpool"
 	@echo "... client.o"
@@ -871,9 +871,9 @@ help:
 	@echo "... root/prime/net/poller/PollPoller.o"
 	@echo "... root/prime/net/poller/PollPoller.i"
 	@echo "... root/prime/net/poller/PollPoller.s"
-	@echo "... server_basic.o"
-	@echo "... server_basic.i"
-	@echo "... server_basic.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
 	@echo "... server_multiloop.o"
 	@echo "... server_multiloop.i"
 	@echo "... server_multiloop.s"

@@ -72,9 +72,9 @@ assert.h
 
 /root/prime/base/copyable.h
 
-/root/prime/examples/sudoku/client.cc
+/root/prime/examples/pricache/client.cc
 sudoku.h
-/root/prime/examples/sudoku/sudoku.h
+/root/prime/examples/pricache/sudoku.h
 prime/base/Logging.h
 -
 prime/net/EventLoop.h
@@ -90,7 +90,17 @@ fstream
 stdio.h
 -
 
-/root/prime/examples/sudoku/sudoku.h
+/root/prime/examples/pricache/sudoku.cc
+sudoku.h
+/root/prime/examples/pricache/sudoku.h
+vector
+-
+assert.h
+-
+string.h
+-
+
+/root/prime/examples/pricache/sudoku.h
 prime/base/Types.h
 -
 prime/base/StringPiece.h

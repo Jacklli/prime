@@ -74,8 +74,8 @@ target_link_libraries(prime_base pthread rt)
 target_link_libraries(prime_net prime_base)
 
 
-add_executable(sudoku_solver_basic server_basic.cc sudoku.cc)
-target_link_libraries(sudoku_solver_basic prime_net)
+add_executable(pricache server.cc sudoku.cc)
+target_link_libraries(pricache prime_net)
 
 add_executable(sudoku_solver_multiloop server_multiloop.cc sudoku.cc)
 target_link_libraries(sudoku_solver_multiloop prime_net)

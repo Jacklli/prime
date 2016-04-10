@@ -4,15 +4,15 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/root/prime/examples/sudoku/server_multiloop.cc" "/root/prime/examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o"
-  "/root/prime/examples/sudoku/sudoku.cc" "/root/prime/examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o"
+  "/root/prime/examples/pricache/server_multiloop.cc" "/root/prime/examples/pricache/CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o"
+  "/root/prime/examples/pricache/sudoku.cc" "/root/prime/examples/pricache/CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/root/prime/examples/sudoku/CMakeFiles/prime_net.dir/DependInfo.cmake"
-  "/root/prime/examples/sudoku/CMakeFiles/prime_base.dir/DependInfo.cmake"
+  "/root/prime/examples/pricache/CMakeFiles/prime_net.dir/DependInfo.cmake"
+  "/root/prime/examples/pricache/CMakeFiles/prime_base.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

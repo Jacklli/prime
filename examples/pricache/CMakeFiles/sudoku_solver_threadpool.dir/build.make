@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/prime/examples/sudoku
+CMAKE_SOURCE_DIR = /root/prime/examples/pricache
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/prime/examples/sudoku
+CMAKE_BINARY_DIR = /root/prime/examples/pricache
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sudoku_solver_threadpool.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/sudoku_solver_threadpool.dir/flags.make
 
 CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o: CMakeFiles/sudoku_solver_threadpool.dir/flags.make
 CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o: server_threadpool.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/pricache/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o -c /root/prime/examples/sudoku/server_threadpool.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o -c /root/prime/examples/pricache/server_threadpool.cc
 
 CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/sudoku/server_threadpool.cc > CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/pricache/server_threadpool.cc > CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.i
 
 CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/sudoku/server_threadpool.cc -o CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/pricache/server_threadpool.cc -o CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.s
 
 CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o.requires:
 .PHONY : CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o.provides.build: CMak
 
 CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o: CMakeFiles/sudoku_solver_threadpool.dir/flags.make
 CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o: sudoku.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/pricache/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o -c /root/prime/examples/sudoku/sudoku.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o -c /root/prime/examples/pricache/sudoku.cc
 
 CMakeFiles/sudoku_solver_threadpool.dir/sudoku.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku_solver_threadpool.dir/sudoku.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/sudoku/sudoku.cc > CMakeFiles/sudoku_solver_threadpool.dir/sudoku.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/pricache/sudoku.cc > CMakeFiles/sudoku_solver_threadpool.dir/sudoku.i
 
 CMakeFiles/sudoku_solver_threadpool.dir/sudoku.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku_solver_threadpool.dir/sudoku.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/sudoku/sudoku.cc -o CMakeFiles/sudoku_solver_threadpool.dir/sudoku.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/pricache/sudoku.cc -o CMakeFiles/sudoku_solver_threadpool.dir/sudoku.s
 
 CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o.requires:
 .PHONY : CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o.requires
@@ -125,6 +125,6 @@ CMakeFiles/sudoku_solver_threadpool.dir/clean:
 .PHONY : CMakeFiles/sudoku_solver_threadpool.dir/clean
 
 CMakeFiles/sudoku_solver_threadpool.dir/depend:
-	cd /root/prime/examples/sudoku && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/prime/examples/pricache && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache/CMakeFiles/sudoku_solver_threadpool.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sudoku_solver_threadpool.dir/depend
 

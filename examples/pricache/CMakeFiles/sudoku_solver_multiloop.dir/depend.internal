@@ -12,8 +12,8 @@ CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o
  /root/prime/base/Timestamp.h
  /root/prime/base/Types.h
  /root/prime/base/copyable.h
- /root/prime/examples/sudoku/server_multiloop.cc
- /root/prime/examples/sudoku/sudoku.h
+ /root/prime/examples/pricache/server_multiloop.cc
+ /root/prime/examples/pricache/sudoku.h
  /root/prime/net/Buffer.h
  /root/prime/net/Callbacks.h
  /root/prime/net/Endian.h
@@ -25,5 +25,5 @@ CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o
 CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o
  /root/prime/base/StringPiece.h
  /root/prime/base/Types.h
- /root/prime/examples/sudoku/sudoku.cc
- /root/prime/examples/sudoku/sudoku.h
+ /root/prime/examples/pricache/sudoku.cc
+ /root/prime/examples/pricache/sudoku.h

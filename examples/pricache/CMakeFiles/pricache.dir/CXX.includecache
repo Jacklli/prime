@@ -92,9 +92,9 @@ assert.h
 
 /root/prime/base/copyable.h
 
-/root/prime/examples/sudoku/server_basic.cc
+/root/prime/examples/pricache/server.cc
 sudoku.h
-/root/prime/examples/sudoku/sudoku.h
+/root/prime/examples/pricache/sudoku.h
 prime/base/Atomic.h
 -
 prime/base/Logging.h
@@ -118,7 +118,7 @@ unistd.h
 iostream
 -
 
-/root/prime/examples/sudoku/sudoku.h
+/root/prime/examples/pricache/sudoku.h
 prime/base/Types.h
 -
 prime/base/StringPiece.h

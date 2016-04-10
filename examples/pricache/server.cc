@@ -55,6 +55,7 @@ class cacheServer {
             if(crlf) {
                 std::cout << "found CRLF" << std::endl;
                 std::cout << "after consult CRLF" << std::endl;
+                string request(buf->peek(), crlf);
                 std::cout << request.data() << std::endl;
                 buf->retrieveUntil(crlf);
                 len = buf->readableBytes();
@@ -88,6 +89,7 @@ class cacheServer {
 
         if (puzzle.size() == implicit_cast<size_t>(kCells)) {
             LOG_DEBUG << conn->name();
+/*
             string result = solvecache(puzzle);
             if (id.empty()) {
                 conn->send(result+"\r\n");
@@ -96,6 +98,7 @@ class cacheServer {
             }
         } else {
             goodRequest = false;
+*/
         }
         return goodRequest;
     }

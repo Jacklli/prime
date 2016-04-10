@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/prime/examples/sudoku
+CMAKE_SOURCE_DIR = /root/prime/examples/pricache
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/prime/examples/sudoku
+CMAKE_BINARY_DIR = /root/prime/examples/pricache
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sudoku_client.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/sudoku_client.dir/flags.make
 
 CMakeFiles/sudoku_client.dir/client.o: CMakeFiles/sudoku_client.dir/flags.make
 CMakeFiles/sudoku_client.dir/client.o: client.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/pricache/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/sudoku_client.dir/client.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_client.dir/client.o -c /root/prime/examples/sudoku/client.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_client.dir/client.o -c /root/prime/examples/pricache/client.cc
 
 CMakeFiles/sudoku_client.dir/client.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku_client.dir/client.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/sudoku/client.cc > CMakeFiles/sudoku_client.dir/client.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/pricache/client.cc > CMakeFiles/sudoku_client.dir/client.i
 
 CMakeFiles/sudoku_client.dir/client.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku_client.dir/client.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/sudoku/client.cc -o CMakeFiles/sudoku_client.dir/client.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/pricache/client.cc -o CMakeFiles/sudoku_client.dir/client.s
 
 CMakeFiles/sudoku_client.dir/client.o.requires:
 .PHONY : CMakeFiles/sudoku_client.dir/client.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/sudoku_client.dir/client.o.provides.build: CMakeFiles/sudoku_client.d
 
 CMakeFiles/sudoku_client.dir/sudoku.o: CMakeFiles/sudoku_client.dir/flags.make
 CMakeFiles/sudoku_client.dir/sudoku.o: sudoku.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/pricache/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/sudoku_client.dir/sudoku.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_client.dir/sudoku.o -c /root/prime/examples/sudoku/sudoku.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sudoku_client.dir/sudoku.o -c /root/prime/examples/pricache/sudoku.cc
 
 CMakeFiles/sudoku_client.dir/sudoku.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku_client.dir/sudoku.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/sudoku/sudoku.cc > CMakeFiles/sudoku_client.dir/sudoku.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/pricache/sudoku.cc > CMakeFiles/sudoku_client.dir/sudoku.i
 
 CMakeFiles/sudoku_client.dir/sudoku.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku_client.dir/sudoku.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/sudoku/sudoku.cc -o CMakeFiles/sudoku_client.dir/sudoku.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/pricache/sudoku.cc -o CMakeFiles/sudoku_client.dir/sudoku.s
 
 CMakeFiles/sudoku_client.dir/sudoku.o.requires:
 .PHONY : CMakeFiles/sudoku_client.dir/sudoku.o.requires
@@ -125,6 +125,6 @@ CMakeFiles/sudoku_client.dir/clean:
 .PHONY : CMakeFiles/sudoku_client.dir/clean
 
 CMakeFiles/sudoku_client.dir/depend:
-	cd /root/prime/examples/sudoku && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku /root/prime/examples/sudoku/CMakeFiles/sudoku_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/prime/examples/pricache && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache /root/prime/examples/pricache/CMakeFiles/sudoku_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sudoku_client.dir/depend
 

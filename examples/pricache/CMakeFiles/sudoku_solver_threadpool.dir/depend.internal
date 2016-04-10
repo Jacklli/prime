@@ -14,8 +14,8 @@ CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o
  /root/prime/base/Timestamp.h
  /root/prime/base/Types.h
  /root/prime/base/copyable.h
- /root/prime/examples/sudoku/server_threadpool.cc
- /root/prime/examples/sudoku/sudoku.h
+ /root/prime/examples/pricache/server_threadpool.cc
+ /root/prime/examples/pricache/sudoku.h
  /root/prime/net/Buffer.h
  /root/prime/net/Callbacks.h
  /root/prime/net/Endian.h
@@ -27,5 +27,5 @@ CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o
 CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o
  /root/prime/base/StringPiece.h
  /root/prime/base/Types.h
- /root/prime/examples/sudoku/sudoku.cc
- /root/prime/examples/sudoku/sudoku.h
+ /root/prime/examples/pricache/sudoku.cc
+ /root/prime/examples/pricache/sudoku.h

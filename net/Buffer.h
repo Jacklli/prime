@@ -79,8 +79,7 @@ class Buffer : public prime::copyable
 
   const char* findCRLF() const
   {
-//    const char* crlf = std::search(peek(), beginWrite(), kCRLF, kCRLF+2);
-    const char* crlf = std::search(peek(), beginWrite(), kCRLF, kCRLF+1);
+    const char* crlf = std::search(peek(), beginWrite(), kCRLF, kCRLF+2);
     return crlf == beginWrite() ? NULL : crlf;
   }
 
@@ -323,7 +322,7 @@ class Buffer : public prime::copyable
   /// It may implement with readv(2)
   /// @return result of read(2), @c errno is saved
   ssize_t readFd(int fd, int* savedErrno);
-
+  
  private:
 
   char* begin()

@@ -22,14 +22,15 @@ using namespace prime::net;
 class SudokuServer
 {
  public:
-  SudokuServer(EventLoop* loop, const InetAddress& listenAddr)
-    : server_(loop, listenAddr, "SudokuServer"),
+  SudokuServer(EventLoop* loop, const InetAddress& listenAddr, int numThreads)
+    : server_(loop, listenAddr, "SudokuServer"), numThreads_(numThreads),
       startTime_(Timestamp::now())
   {
     server_.setConnectionCallback(
         boost::bind(&SudokuServer::onConnection, this, _1));
     server_.setMessageCallback(
         boost::bind(&SudokuServer::onMessage, this, _1, _2, _3));
+    server_.setThreadNum(numThreads);
   }
 
   void start()
@@ -47,21 +48,28 @@ class SudokuServer
 
   void onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp)
   {
-   std::cout << "start read";
+   std::cout << "start read" << std::endl;
     LOG_DEBUG << conn->name();
     size_t len = buf->readableBytes();
 
+std::cout <<"read len is:" << len << std::endl;
 
-    while (len >= kCells + 2)
+std::cout << "kCells is:" << kCells << std::endl;
+
+std::cout << buf->peek() << std::endl;
+
+    while (len >= kCells + 1)
     {
-      const char* crlf = buf->findCRLF("\n");
-    std::cout << "not found CRLF";
+      const char* crlf = buf->findCRLF();
+    std::cout << "before found CRLF,checking found CRLF......" << std::endl;
       if (crlf)
       {
+    std::cout << "found CRLF" << std::endl;
         string request(buf->peek(), crlf);
-        buf->retrieveUntil(crlf + 2);
+    std::cout << "after consult CRLF" << std::endl;
+    std::cout << request.data() << std::endl;
+        buf->retrieveUntil(crlf);
         len = buf->readableBytes();
-    std::cout << request.data();
         if (!processRequest(conn, request))
         {
           conn->send("Bad Request!\r\n");
@@ -120,6 +128,7 @@ class SudokuServer
   }
 
   TcpServer server_;
+  int numThreads_;
   Timestamp startTime_;
 };
 
@@ -128,7 +137,7 @@ int main(int argc, char* argv[])
   LOG_INFO << "pid = " << getpid() << ", tid = " << CurrentThread::tid();
   EventLoop loop;
   InetAddress listenAddr(9981);
-  SudokuServer server(&loop, listenAddr);
+  SudokuServer server(&loop, listenAddr, 10);
 
   server.start();
 

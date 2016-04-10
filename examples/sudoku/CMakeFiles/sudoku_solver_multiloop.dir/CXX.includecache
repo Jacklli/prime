@@ -116,16 +116,6 @@ stdio.h
 unistd.h
 -
 
-/root/prime/examples/sudoku/sudoku.cc
-sudoku.h
-/root/prime/examples/sudoku/sudoku.h
-vector
--
-assert.h
--
-string.h
--
-
 /root/prime/examples/sudoku/sudoku.h
 prime/base/Types.h
 -

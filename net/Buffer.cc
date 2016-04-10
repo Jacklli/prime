@@ -17,7 +17,8 @@
 using namespace prime;
 using namespace prime::net;
 
-const char Buffer::kCRLF[] = "\r\n";
+//const char Buffer::kCRLF[] = "\r\n";
+const char Buffer::kCRLF[] = "!";
 
 const size_t Buffer::kCheapPrepend;
 const size_t Buffer::kInitialSize;

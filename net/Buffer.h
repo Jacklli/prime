@@ -79,7 +79,8 @@ class Buffer : public prime::copyable
 
   const char* findCRLF() const
   {
-    const char* crlf = std::search(peek(), beginWrite(), kCRLF, kCRLF+2);
+//    const char* crlf = std::search(peek(), beginWrite(), kCRLF, kCRLF+2);
+    const char* crlf = std::search(peek(), beginWrite(), kCRLF, kCRLF+1);
     return crlf == beginWrite() ? NULL : crlf;
   }
 
@@ -87,7 +88,8 @@ class Buffer : public prime::copyable
   {
     assert(peek() <= start);
     assert(start <= beginWrite());
-    const char* crlf = std::search(start, beginWrite(), kCRLF, kCRLF+2);
+//    const char* crlf = std::search(start, beginWrite(), kCRLF, kCRLF+2);
+    const char* crlf = std::search(start, beginWrite(), kCRLF, kCRLF+1);
     return crlf == beginWrite() ? NULL : crlf;
   }
 

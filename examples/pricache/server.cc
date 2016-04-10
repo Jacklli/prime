@@ -107,7 +107,7 @@ class cacheServer {
     TcpServer server_;
     int numThreads_;
     Timestamp startTime_;
-    std::vector<dict *> db;
+    database db;
 };
 
 int main(int argc, char* argv[]) {

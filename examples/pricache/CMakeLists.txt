@@ -73,6 +73,8 @@ add_library(prime_net ${net_SRCS})
 target_link_libraries(prime_base pthread rt)
 target_link_libraries(prime_net prime_base)
 
+add_executable(dict.o db/dict.cc)
 
 add_executable(pricache server.cc)
 target_link_libraries(pricache prime_net)
+

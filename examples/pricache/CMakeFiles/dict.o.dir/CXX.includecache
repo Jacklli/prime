@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/prime/examples/pricache/db/dict.cc
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+malloc.h
+-
+stdarg.h
+-
+assert.h
+-
+limits.h
+-
+dict.h
+/root/prime/examples/pricache/db/dict.h
+object.h
+/root/prime/examples/pricache/db/object.h
+
+/root/prime/examples/pricache/db/dict.h
+
+/root/prime/examples/pricache/db/object.h
+stdlib.h
+-
+

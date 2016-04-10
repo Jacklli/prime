@@ -27,7 +27,7 @@ static void _dictFree(void *ptr) {
 }
 
 static int _dictExpandIfNeeded(dict *ht);
-static unsigned long _dictNextPower(unsigned long size);
+//static unsigned long _dictNextPower(unsigned long size);
 static int _dictKeyIndex(dict *ht, const void *key);
 static int _dictInit(dict *ht, dictType *type, void *privDataPtr);
 
@@ -53,7 +53,7 @@ unsigned int dictIdentityHashFunction(unsigned int key)
 
 /* Generic hash function (a popular one from Bernstein).
  * I tested a few and this was the best. */
-unsigned int dictGenHashFunction(const unsigned char *buf, int len) {
+unsigned int database::dictGenHashFunction(const unsigned char *buf, int len) {
     unsigned int hash = 5381;
 
     while (len--)
@@ -74,10 +74,10 @@ static void _dictReset(dict *ht)
 }
 
 /* Create a new hash table */
-dict *dictCreate(dictType *type,
+dict *database::dictCreate(dictType *type,
         void *privDataPtr)
 {
-    dict *ht = _dictAlloc(sizeof(*ht));
+    dict *ht = static_cast<dict *>(_dictAlloc(sizeof(*ht)));
 
     _dictInit(ht,type,privDataPtr);
     return ht;
@@ -93,26 +93,15 @@ int _dictInit(dict *ht, dictType *type,
     return 1;
 }
 
-/* Resize the table to the minimal size that contains all the elements,
- * but with the invariant of a USER/BUCKETS ration near to <= 1 */
-int dictResize(dict *ht)
-{
-    int minimal = ht->used;
-
-    if (minimal < DICT_HT_INITIAL_SIZE)
-        minimal = DICT_HT_INITIAL_SIZE;
-    return dictExpand(ht, minimal);
-}
-
 /* Expand or create the hashtable */
-int dictExpand(dict *ht, unsigned long size)
+int database::dictExpand(dict *ht, unsigned long size)
 {
     unsigned long i = 0;
     dict *n; /* the new hashtable */
 //    unsigned long realsize = _dictNextPower(size), i;
     unsigned long realsize = size;
 
-    n = (dict *)malloc(sizeof(dict));
+    n = static_cast<dict *>(malloc(sizeof(dict)));
     memset(n, '\0', sizeof(dict));
     /* the size is invalid if it is smaller than the number of
      * elements already inside the hashtable */
@@ -122,7 +111,7 @@ int dictExpand(dict *ht, unsigned long size)
     _dictInit(n, ht->type, ht->privdata);
     n->size = realsize;
     n->sizemask = realsize-1;
-    n->table = _dictAlloc(realsize*sizeof(dictEntry*));
+    n->table = static_cast<dictEntry **>(_dictAlloc(realsize*sizeof(dictEntry*)));
 
     /* Initialize all the pointers to NULL */
     memset(n->table, 0, realsize*sizeof(dictEntry*));
@@ -143,7 +132,7 @@ int dictExpand(dict *ht, unsigned long size)
 
             nextHe = he->next;
             /* Get the new element index */
-            h = dictHashKey(ht, he->key) & n->sizemask;
+            h = static_cast<unsigned int> (dictHashKey(ht, he->key) & n->sizemask);
             he->next = n->table[h];
             n->table[h] = he;
             ht->used--;
@@ -159,8 +148,20 @@ int dictExpand(dict *ht, unsigned long size)
     return 1;
 }
 
+/* Resize the table to the minimal size that contains all the elements,
+ * but with the invariant of a USER/BUCKETS ration near to <= 1 */
+int database::dictResize(dict *ht)
+{
+    int minimal = static_cast<int>(ht->used);
+
+    if (minimal < DICT_HT_INITIAL_SIZE)
+        minimal = DICT_HT_INITIAL_SIZE;
+    return dictExpand(ht, minimal);
+}
+
+
 /* Add an element to the target hash table */
-int dictAdd(dict *ht, void *key, void *val)
+int database::dictAdd(dict *ht, void *key, void *val)
 {
     int index, keylen = 0;
     char *newkey = NULL;
@@ -169,20 +170,20 @@ int dictAdd(dict *ht, void *key, void *val)
     /* Get the index of the new element, or -1 if
      * the element already exists. */
     if ((index = _dictKeyIndex(ht, key)) == -1) {
-        writeLog(1, "_dictKeyIndex error!");
+//        writeLog(1, "_dictKeyIndex error!");
         return -1;
     }
 
     /* Allocates the memory and stores key */
-    entry = _dictAlloc(sizeof(*entry));
+    entry = static_cast <dictEntry*> (_dictAlloc(sizeof(*entry)));
     entry->next = ht->table[index];
     ht->table[index] = entry;
 
 //newkey = (char *)malloc((keylen = strlen(key))+1);
-newkey = (char *)malloc((keylen = strlen(key))+1);
+newkey = static_cast<char *> (malloc((keylen = static_cast<int>(strlen(static_cast<const char *>(key))))+1));
 memset(newkey, '\0', keylen+1);
 
-strcpy(newkey, key);
+strcpy(newkey, static_cast<char *>(key));
 
 /*
 *  TO DO
@@ -201,7 +202,7 @@ strcpy(newkey, key);
  * Return 1 if the key was added from scratch, 0 if there was already an
  * element with such key and dictReplace() just performed a value update
  * operation. */
-int dictReplace(dict *ht, void *key, void *val)
+int database::dictReplace(dict *ht, void *key, void *val)
 {
     dictEntry *entry, auxentry;
 
@@ -231,7 +232,7 @@ static int dictGenericDelete(dict *ht, const void *key, int nofree)
 
     if (ht->size == 0)
         return -1;
-    h = dictHashKey(ht, key) & ht->sizemask;
+    h = static_cast<unsigned int> (dictHashKey(ht, key) & ht->sizemask);
     he = ht->table[h];
 
     prevHe = NULL;
@@ -256,11 +257,11 @@ static int dictGenericDelete(dict *ht, const void *key, int nofree)
     return -1; /* not found */
 }
 
-int dictDelete(dict *ht, const void *key) {
+int database::dictDelete(dict *ht, const void *key) {
     return dictGenericDelete(ht,key,0);
 }
 
-int dictDeleteNoFree(dict *ht, const void *key) {
+int database::dictDeleteNoFree(dict *ht, const void *key) {
     return dictGenericDelete(ht,key,1);
 }
 
@@ -291,31 +292,31 @@ int _dictClear(dict *ht)
 }
 
 /* Clear & Release the hash table */
-void dictRelease(dict *ht)
+void database::dictRelease(dict *ht)
 {
     _dictClear(ht);
     _dictFree(ht);
 }
 
-dictEntry *dictFind(dict *ht, const void *key)
+dictEntry *database::dictFind(dict *ht, const void *key)
 {
     dictEntry *he;
     unsigned int h;
 
     if (ht->size == 0) return NULL;
-    h = dictHashKey(ht, key) & ht->sizemask;
+    h = static_cast<unsigned int> (dictHashKey(ht, key) & ht->sizemask);
     he = ht->table[h];
     while(he) {
-        if (strcmp(key, he->key) == 0)
+        if (strcmp(static_cast<const char *>(key), static_cast<const char*>(he->key)) == 0)
             return he;
         he = he->next;
     }
     return NULL;
 }
 
-dictIterator *dictGetIterator(dict *ht)
+dictIterator *database::dictGetIterator(dict *ht)
 {
-    dictIterator *iter = _dictAlloc(sizeof(*iter));
+    dictIterator *iter = static_cast<dictIterator*>(_dictAlloc(sizeof(*iter)));
 
     iter->ht = ht;
     iter->index = -1;
@@ -324,13 +325,13 @@ dictIterator *dictGetIterator(dict *ht)
     return iter;
 }
 
-dictEntry *dictNext(dictIterator *iter)
+dictEntry *database::dictNext(dictIterator *iter)
 {
     while (1) {
         if (iter->entry == NULL) {
             iter->index++;
             if (iter->index >=
-                    (signed)iter->ht->size) break;
+                    static_cast<signed>(iter->ht->size)) break;
             iter->entry = iter->ht->table[iter->index];
         } else {
             iter->entry = iter->nextEntry;
@@ -345,14 +346,14 @@ dictEntry *dictNext(dictIterator *iter)
     return NULL;
 }
 
-void dictReleaseIterator(dictIterator *iter)
+void database::dictReleaseIterator(dictIterator *iter)
 {
     _dictFree(iter);
 }
 
 /* Return a random entry from the hash table. Useful to
  * implement randomized algorithms */
-dictEntry *dictGetRandomKey(dict *ht)
+dictEntry *database::dictGetRandomKey(dict *ht)
 {
     dictEntry *he;
     unsigned int h;
@@ -360,7 +361,7 @@ dictEntry *dictGetRandomKey(dict *ht)
 
     if (ht->used == 0) return NULL;
     do {
-        h = random() & ht->sizemask;
+        h = static_cast<unsigned int>(random() & ht->sizemask);
         he = ht->table[h];
     } while(he == NULL);
 
@@ -373,7 +374,7 @@ dictEntry *dictGetRandomKey(dict *ht)
         he = he->next;
         listlen++;
     }
-    listele = random() % listlen;
+    listele = static_cast<int>(random() % listlen);
     he = ht->table[h];
     while(listele--) he = he->next;
     return he;
@@ -386,14 +387,20 @@ static int _dictExpandIfNeeded(dict *ht)
 {
     /* If the hash table is empty expand it to the intial size,
      * if the table is "full" dobule its size. */
-    if (ht->size == 0)
-        return dictExpand(ht, DICT_HT_INITIAL_SIZE);
-    if (ht->used == ht->size)
-        return dictExpand(ht, ht->size*2);
+    int ret = 0;
+    if (ht->size == 0) {
+        ret = dictExpand(ht, DICT_HT_INITIAL_SIZE);
+        return ret;
+    }
+    if (ht->used == ht->size) {
+        ret = dictExpand(ht, ht->size*2);
+        return ret;
+    }
     return 1;
 }
 
 /* Our hash table capability is a power of two */
+/*
 static unsigned long _dictNextPower(unsigned long size)
 {
     unsigned long i = DICT_HT_INITIAL_SIZE;
@@ -405,6 +412,7 @@ static unsigned long _dictNextPower(unsigned long size)
         i *= 2;
     }
 }
+*/
 
 /* Returns the index of a free slot that can be populated with
  * an hash entry for the given 'key'.
@@ -416,20 +424,20 @@ static int _dictKeyIndex(dict *ht, const void *key)
 
     /* Expand the hashtable if needed */
     if (_dictExpandIfNeeded(ht) == -1) {
-        writeLog(1, "_dictExpandIfNeeded == -1");
+//        writeLog(1, "_dictExpandIfNeeded == -1");
         return -1;
     }
     /* Compute the key hash value */
-    h = dictHashKey(ht, key) & ht->sizemask;
+    h = static_cast<unsigned int>(dictHashKey(ht, key) & ht->sizemask);
     /* Search if this slot does not already contain the given key */
     he = ht->table[h];
     while(he) {
 //        if (dictCompareHashKeys(ht, key, he->key)) {
-        if(strcmp(key, he->key) == 0) {
-            logFile("key already existed.");
-            logFile(1, "key to ins is:");
-            logFile(key);
-            logFile(he->key);
+        if(strcmp(static_cast<const char *>(key), static_cast<const char *>(he->key)) == 0) {
+//            logFile("key already existed.");
+//            logFile(1, "key to ins is:");
+//            logFile(key);
+//            logFile(he->key);
             return -1;
         }
         he = he->next;
@@ -437,12 +445,12 @@ static int _dictKeyIndex(dict *ht, const void *key)
     return h;
 }
 
-void dictEmpty(dict *ht) {
+void database::dictEmpty(dict *ht) {
     _dictClear(ht);
 }
 
 #define DICT_STATS_VECTLEN 50
-void dictPrintStats(dict *ht) {
+void database::dictPrintStats(dict *ht) {
     unsigned long i, slots = 0, chainlen, maxchainlen = 0;
     unsigned long totchainlen = 0;
     unsigned long clvector[DICT_STATS_VECTLEN];
@@ -477,68 +485,79 @@ void dictPrintStats(dict *ht) {
     printf(" number of elements: %ld\n", ht->used);
     printf(" different slots: %ld\n", slots);
     printf(" max chain length: %ld\n", maxchainlen);
-    printf(" avg chain length (counted): %.02f\n", (float)totchainlen/slots);
-    printf(" avg chain length (computed): %.02f\n", (float)ht->used/slots);
+    printf(" avg chain length (counted): %.02f\n", static_cast<float>(totchainlen/slots));
+    printf(" avg chain length (computed): %.02f\n", static_cast<float>(ht->used/slots));
     printf(" Chain length distribution:\n");
     for (i = 0; i < DICT_STATS_VECTLEN-1; i++) {
         if (clvector[i] == 0) continue;
-        printf("   %s%ld: %ld (%.02f%%)\n",(i == DICT_STATS_VECTLEN-1)?">= ":"", i, clvector[i], ((float)clvector[i]/ht->size)*100);
+        printf("   %s%ld: %ld (%.02f%%)\n",(i == DICT_STATS_VECTLEN-1)?">= ":"", i, clvector[i], (static_cast<float>(clvector[i]/ht->size)*100));
     }
 }
 
 /* ----------------------- StringCopy Hash Table Type ------------------------*/
 
+/*
 static unsigned int _dictStringCopyHTHashFunction(const void *key)
 {
-    return dictGenHashFunction(key, strlen(key));
+    return dictGenHashFunction(key, strlen(static_cast<const char *>(key)));
 }
-
+*/
+/*
 static void *_dictStringCopyHTKeyDup(void *privdata, const void *key)
 {
-    int len = strlen(key);
-    char *copy = _dictAlloc(len+1);
+    int len = static_cast<int>(strlen(static_cast<const char *>(key)));
+    char *copy = static_cast<char *>(_dictAlloc(len+1));
     DICT_NOTUSED(privdata);
 
     memcpy(copy, key, len);
     copy[len] = '\0';
     return copy;
 }
+*/
 
+/*
 static void *_dictStringKeyValCopyHTValDup(void *privdata, const void *val)
 {
-    int len = strlen(val);
-    char *copy = _dictAlloc(len+1);
+    int len = static_cast<int>(strlen(static_cast<const char *>(val)));
+    char *copy = static_cast<char *> (_dictAlloc(len+1));
     DICT_NOTUSED(privdata);
 
     memcpy(copy, val, len);
     copy[len] = '\0';
     return copy;
 }
+*/
 
+/*
 static int _dictStringCopyHTKeyCompare(void *privdata, const void *key1,
         const void *key2)
 {
     DICT_NOTUSED(privdata);
 
-    return strcmp(key1, key2) == 0;
+    return strcmp(static_cast<const char *>(key1), static_cast<const char *>(key2)) == 0;
 }
+*/
 
+/*
 static void _dictStringCopyHTKeyDestructor(void *privdata, void *key)
 {
     DICT_NOTUSED(privdata);
 
-    _dictFree((void*)key); /* ATTENTION: const cast */
+    _dictFree(static_cast<void *>(key));
 }
+*/
 
+/*
 static void _dictStringKeyValCopyHTValDestructor(void *privdata, void *val)
 {
     DICT_NOTUSED(privdata);
 
-    _dictFree((void*)val); /* ATTENTION: const cast */
+    _dictFree(static_cast<void *>(val));
 }
+*/
 
 static unsigned int dictEncObjHash(const void *key) {
-    return dictGenHashFunction(key, strlen(key));
+    return dictGenHashFunction(key, strlen(static_cast<const char *>(key)));
 }
 
 int keyDestructor(char *key) {
@@ -546,7 +565,7 @@ int keyDestructor(char *key) {
     return  1;
 }
 static int decrRefCount(void *obj) {
-    valObject *o = obj;
+    valObject *o = static_cast<valObject *> (obj);
 
     if (--(o->refcount) == 0) {
         switch(o->type) {
@@ -564,13 +583,16 @@ static int decrRefCount(void *obj) {
 }
 
 int valDestructor(void *privdata, void *obj) {
-    return decrRefCount((valObject *)obj);
+    return decrRefCount(static_cast<valObject *>(obj));
 }
 
+dictType dDictType = {  /* default dictType */ 
+    dictEncObjHash,            /* hash function */ 
+    NULL,                      /* key compare */ 
+    keyDestructor,             /* key destructor */ 
+    valDestructor              /* val destructor */ 
+}; 
 
-dictType dDictType = {  /* default dictType */
-    dictEncObjHash,            /* hash function */
-    NULL,                      /* key compare */
-    keyDestructor,             /* key destructor */
-    valDestructor              /* val destructor */
-};
+database::database(int dbNum=1):dbNum_(dbNum) {
+    db = dictCreate(&dDictType, NULL);
+}

@@ -39,6 +39,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/dict.o.dir/DependInfo.cmake"
   "CMakeFiles/pricache.dir/DependInfo.cmake"
   "CMakeFiles/prime_base.dir/DependInfo.cmake"
   "CMakeFiles/prime_net.dir/DependInfo.cmake"

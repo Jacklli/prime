@@ -1,3 +1,4 @@
+/root/prime/examples/pricache/CMakeFiles/dict.o.dir
 /root/prime/examples/pricache/CMakeFiles/pricache.dir
 /root/prime/examples/pricache/CMakeFiles/prime_base.dir
 /root/prime/examples/pricache/CMakeFiles/prime_net.dir

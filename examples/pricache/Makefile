@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named dict.o
+
+# Build rule for target.
+dict.o: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dict.o
+.PHONY : dict.o
+
+# fast build rule for target.
+dict.o/fast:
+	$(MAKE) -f CMakeFiles/dict.o.dir/build.make CMakeFiles/dict.o.dir/build
+.PHONY : dict.o/fast
+
+#=============================================================================
 # Target rules for targets named pricache
 
 # Build rule for target.
@@ -136,6 +149,21 @@ prime_net: cmake_check_build_system
 prime_net/fast:
 	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/build
 .PHONY : prime_net/fast
+
+# target to build an object file
+db/dict.o:
+	$(MAKE) -f CMakeFiles/dict.o.dir/build.make CMakeFiles/dict.o.dir/db/dict.o
+.PHONY : db/dict.o
+
+# target to preprocess a source file
+db/dict.i:
+	$(MAKE) -f CMakeFiles/dict.o.dir/build.make CMakeFiles/dict.o.dir/db/dict.i
+.PHONY : db/dict.i
+
+# target to generate assembly for a file
+db/dict.s:
+	$(MAKE) -f CMakeFiles/dict.o.dir/build.make CMakeFiles/dict.o.dir/db/dict.s
+.PHONY : db/dict.s
 
 # target to build an object file
 root/prime/base/AsyncLogging.o:
@@ -653,11 +681,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... dict.o"
 	@echo "... edit_cache"
 	@echo "... pricache"
 	@echo "... prime_base"
 	@echo "... prime_net"
 	@echo "... rebuild_cache"
+	@echo "... db/dict.o"
+	@echo "... db/dict.i"
+	@echo "... db/dict.s"
 	@echo "... root/prime/base/AsyncLogging.o"
 	@echo "... root/prime/base/AsyncLogging.i"
 	@echo "... root/prime/base/AsyncLogging.s"

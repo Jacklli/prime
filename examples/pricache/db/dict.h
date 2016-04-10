@@ -65,23 +65,29 @@ typedef struct dictIterator {
 #define dictSlots(ht) ((ht)->size)
 #define dictSize(ht) ((ht)->used)
 
-/* API */
-dict *dictCreate(dictType *type, void *privDataPtr);
-int dictExpand(dict *ht, unsigned long size);
-int dictAdd(dict *ht, void *key, void *val);
-int dictReplace(dict *ht, void *key, void *val);
-int dictDelete(dict *ht, const void *key);
-int dictDeleteNoFree(dict *ht, const void *key);
-void dictRelease(dict *ht);
-dictEntry * dictFind(dict *ht, const void *key);
-int dictResize(dict *ht);
-dictIterator *dictGetIterator(dict *ht);
-dictEntry *dictNext(dictIterator *iter);
-void dictReleaseIterator(dictIterator *iter);
-dictEntry *dictGetRandomKey(dict *ht);
-void dictPrintStats(dict *ht);
-unsigned int dictGenHashFunction(const unsigned char *buf, int len);
-void dictEmpty(dict *ht);
+class database {
+  public:
+      database(int);
+      int dictAdd(dict *ht, void *key, void *val);
+      dict *dictCreate(dictType *type, void *privDataPtr);
+  private:
+      int dictExpand(dict *ht, unsigned long size);
+      int dictReplace(dict *ht, void *key, void *val);
+      int dictDelete(dict *ht, const void *key);
+      int dictDeleteNoFree(dict *ht, const void *key);
+      void dictRelease(dict *ht);
+      dictEntry * dictFind(dict *ht, const void *key);
+      int dictResize(dict *ht);
+      dictIterator *dictGetIterator(dict *ht);
+      dictEntry *dictNext(dictIterator *iter);
+      void dictReleaseIterator(dictIterator *iter);
+      dictEntry *dictGetRandomKey(dict *ht);
+      void dictPrintStats(dict *ht);
+      unsigned int dictGenHashFunction(const unsigned char *buf, int len);
+      void dictEmpty(dict *ht);
+      int dbNum_;
+      dict *db;
+};
 
 
 #endif /* __DICT_H__ */

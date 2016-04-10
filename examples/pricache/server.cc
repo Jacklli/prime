@@ -5,6 +5,8 @@
 #include <prime/net/InetAddress.h>
 #include <prime/net/TcpServer.h>
 
+#include <prime/examples/pricache/db/dict.h>
+
 #include <boost/bind.hpp>
 
 #include <utility>
@@ -20,13 +22,14 @@ using namespace prime::net;
 class cacheServer {
   public:
     cacheServer(EventLoop* loop, const InetAddress& listenAddr, int numThreads)
-    : server_(loop, listenAddr, "cacheServer"), numThreads_(numThreads),
+    : server_(loop, listenAddr, "cacheServer"),
+      numThreads_(numThreads),
       startTime_(Timestamp::now()) {
-    server_.setConnectionCallback(
-        boost::bind(&cacheServer::onConnection, this, _1));
-    server_.setMessageCallback(
-        boost::bind(&cacheServer::onMessage, this, _1, _2, _3));
-    server_.setThreadNum(numThreads);
+        server_.setConnectionCallback(
+            boost::bind(&cacheServer::onConnection, this, _1));
+        server_.setMessageCallback(
+            boost::bind(&cacheServer::onMessage, this, _1, _2, _3));
+        server_.setThreadNum(numThreads);
     }
 
     void start() {
@@ -104,6 +107,7 @@ class cacheServer {
     TcpServer server_;
     int numThreads_;
     Timestamp startTime_;
+    std::vector<dict *> db;
 };
 
 int main(int argc, char* argv[]) {

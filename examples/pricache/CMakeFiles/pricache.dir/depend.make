@@ -11,6 +11,7 @@ CMakeFiles/pricache.dir/server.o: /root/prime/base/Thread.h
 CMakeFiles/pricache.dir/server.o: /root/prime/base/Timestamp.h
 CMakeFiles/pricache.dir/server.o: /root/prime/base/Types.h
 CMakeFiles/pricache.dir/server.o: /root/prime/base/copyable.h
+CMakeFiles/pricache.dir/server.o: db/dict.h
 CMakeFiles/pricache.dir/server.o: server.cc
 CMakeFiles/pricache.dir/server.o: /root/prime/net/Buffer.h
 CMakeFiles/pricache.dir/server.o: /root/prime/net/Callbacks.h

@@ -92,6 +92,8 @@ assert.h
 
 /root/prime/base/copyable.h
 
+/root/prime/examples/pricache/db/dict.h
+
 /root/prime/examples/pricache/server.cc
 prime/base/Atomic.h
 -
@@ -104,6 +106,8 @@ prime/net/EventLoop.h
 prime/net/InetAddress.h
 -
 prime/net/TcpServer.h
+-
+prime/examples/pricache/db/dict.h
 -
 boost/bind.hpp
 -

@@ -1,6 +1,5 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/pricache.dir/server.o"
-  "CMakeFiles/pricache.dir/sudoku.o"
   "pricache.pdb"
   "pricache"
 )

@@ -12,7 +12,6 @@ CMakeFiles/pricache.dir/server.o: /root/prime/base/Timestamp.h
 CMakeFiles/pricache.dir/server.o: /root/prime/base/Types.h
 CMakeFiles/pricache.dir/server.o: /root/prime/base/copyable.h
 CMakeFiles/pricache.dir/server.o: server.cc
-CMakeFiles/pricache.dir/server.o: sudoku.h
 CMakeFiles/pricache.dir/server.o: /root/prime/net/Buffer.h
 CMakeFiles/pricache.dir/server.o: /root/prime/net/Callbacks.h
 CMakeFiles/pricache.dir/server.o: /root/prime/net/Endian.h
@@ -21,9 +20,4 @@ CMakeFiles/pricache.dir/server.o: /root/prime/net/InetAddress.h
 CMakeFiles/pricache.dir/server.o: /root/prime/net/TcpConnection.h
 CMakeFiles/pricache.dir/server.o: /root/prime/net/TcpServer.h
 CMakeFiles/pricache.dir/server.o: /root/prime/net/TimerId.h
-
-CMakeFiles/pricache.dir/sudoku.o: /root/prime/base/StringPiece.h
-CMakeFiles/pricache.dir/sudoku.o: /root/prime/base/Types.h
-CMakeFiles/pricache.dir/sudoku.o: sudoku.cc
-CMakeFiles/pricache.dir/sudoku.o: sudoku.h
 

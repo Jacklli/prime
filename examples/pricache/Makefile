@@ -137,60 +137,6 @@ prime_net/fast:
 	$(MAKE) -f CMakeFiles/prime_net.dir/build.make CMakeFiles/prime_net.dir/build
 .PHONY : prime_net/fast
 
-#=============================================================================
-# Target rules for targets named sudoku_client
-
-# Build rule for target.
-sudoku_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sudoku_client
-.PHONY : sudoku_client
-
-# fast build rule for target.
-sudoku_client/fast:
-	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/build
-.PHONY : sudoku_client/fast
-
-#=============================================================================
-# Target rules for targets named sudoku_solver_multiloop
-
-# Build rule for target.
-sudoku_solver_multiloop: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sudoku_solver_multiloop
-.PHONY : sudoku_solver_multiloop
-
-# fast build rule for target.
-sudoku_solver_multiloop/fast:
-	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/build
-.PHONY : sudoku_solver_multiloop/fast
-
-#=============================================================================
-# Target rules for targets named sudoku_solver_threadpool
-
-# Build rule for target.
-sudoku_solver_threadpool: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sudoku_solver_threadpool
-.PHONY : sudoku_solver_threadpool
-
-# fast build rule for target.
-sudoku_solver_threadpool/fast:
-	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/build
-.PHONY : sudoku_solver_threadpool/fast
-
-# target to build an object file
-client.o:
-	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/client.o
-.PHONY : client.o
-
-# target to preprocess a source file
-client.i:
-	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/client.i
-.PHONY : client.i
-
-# target to generate assembly for a file
-client.s:
-	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/client.s
-.PHONY : client.s
-
 # target to build an object file
 root/prime/base/AsyncLogging.o:
 	$(MAKE) -f CMakeFiles/prime_base.dir/build.make CMakeFiles/prime_base.dir/root/prime/base/AsyncLogging.o
@@ -701,60 +647,6 @@ server.s:
 	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/server.s
 .PHONY : server.s
 
-# target to build an object file
-server_multiloop.o:
-	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.o
-.PHONY : server_multiloop.o
-
-# target to preprocess a source file
-server_multiloop.i:
-	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.i
-.PHONY : server_multiloop.i
-
-# target to generate assembly for a file
-server_multiloop.s:
-	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.s
-.PHONY : server_multiloop.s
-
-# target to build an object file
-server_threadpool.o:
-	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.o
-.PHONY : server_threadpool.o
-
-# target to preprocess a source file
-server_threadpool.i:
-	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.i
-.PHONY : server_threadpool.i
-
-# target to generate assembly for a file
-server_threadpool.s:
-	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.s
-.PHONY : server_threadpool.s
-
-# target to build an object file
-sudoku.o:
-	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/sudoku.o
-	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/sudoku.o
-	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/sudoku.o
-	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/sudoku.o
-.PHONY : sudoku.o
-
-# target to preprocess a source file
-sudoku.i:
-	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/sudoku.i
-	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/sudoku.i
-	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/sudoku.i
-	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/sudoku.i
-.PHONY : sudoku.i
-
-# target to generate assembly for a file
-sudoku.s:
-	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/sudoku.s
-	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/sudoku.s
-	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/sudoku.s
-	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/sudoku.s
-.PHONY : sudoku.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -766,12 +658,6 @@ help:
 	@echo "... prime_base"
 	@echo "... prime_net"
 	@echo "... rebuild_cache"
-	@echo "... sudoku_client"
-	@echo "... sudoku_solver_multiloop"
-	@echo "... sudoku_solver_threadpool"
-	@echo "... client.o"
-	@echo "... client.i"
-	@echo "... client.s"
 	@echo "... root/prime/base/AsyncLogging.o"
 	@echo "... root/prime/base/AsyncLogging.i"
 	@echo "... root/prime/base/AsyncLogging.s"
@@ -874,15 +760,6 @@ help:
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
-	@echo "... server_multiloop.o"
-	@echo "... server_multiloop.i"
-	@echo "... server_multiloop.s"
-	@echo "... server_threadpool.o"
-	@echo "... server_threadpool.i"
-	@echo "... server_threadpool.s"
-	@echo "... sudoku.o"
-	@echo "... sudoku.i"
-	@echo "... sudoku.s"
 .PHONY : help
 
 

@@ -5,7 +5,6 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/root/prime/examples/pricache/server.cc" "/root/prime/examples/pricache/CMakeFiles/pricache.dir/server.o"
-  "/root/prime/examples/pricache/sudoku.cc" "/root/prime/examples/pricache/CMakeFiles/pricache.dir/sudoku.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

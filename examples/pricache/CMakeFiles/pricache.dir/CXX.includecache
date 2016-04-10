@@ -93,8 +93,6 @@ assert.h
 /root/prime/base/copyable.h
 
 /root/prime/examples/pricache/server.cc
-sudoku.h
-/root/prime/examples/pricache/sudoku.h
 prime/base/Atomic.h
 -
 prime/base/Logging.h
@@ -116,12 +114,6 @@ stdio.h
 unistd.h
 -
 iostream
--
-
-/root/prime/examples/pricache/sudoku.h
-prime/base/Types.h
--
-prime/base/StringPiece.h
 -
 
 /root/prime/net/Buffer.h

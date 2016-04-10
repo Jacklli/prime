@@ -1,6 +1,3 @@
 /root/prime/examples/pricache/CMakeFiles/pricache.dir
 /root/prime/examples/pricache/CMakeFiles/prime_base.dir
 /root/prime/examples/pricache/CMakeFiles/prime_net.dir
-/root/prime/examples/pricache/CMakeFiles/sudoku_client.dir
-/root/prime/examples/pricache/CMakeFiles/sudoku_solver_multiloop.dir
-/root/prime/examples/pricache/CMakeFiles/sudoku_solver_threadpool.dir

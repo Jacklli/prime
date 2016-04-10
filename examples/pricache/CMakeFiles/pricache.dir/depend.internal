@@ -13,7 +13,6 @@ CMakeFiles/pricache.dir/server.o
  /root/prime/base/Types.h
  /root/prime/base/copyable.h
  /root/prime/examples/pricache/server.cc
- /root/prime/examples/pricache/sudoku.h
  /root/prime/net/Buffer.h
  /root/prime/net/Callbacks.h
  /root/prime/net/Endian.h
@@ -22,8 +21,3 @@ CMakeFiles/pricache.dir/server.o
  /root/prime/net/TcpConnection.h
  /root/prime/net/TcpServer.h
  /root/prime/net/TimerId.h
-CMakeFiles/pricache.dir/sudoku.o
- /root/prime/base/StringPiece.h
- /root/prime/base/Types.h
- /root/prime/examples/pricache/sudoku.cc
- /root/prime/examples/pricache/sudoku.h

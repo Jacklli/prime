@@ -1,5 +1,3 @@
-#include "sudoku.h"
-
 #include <prime/base/Atomic.h>
 #include <prime/base/Logging.h>
 #include <prime/base/Thread.h>
@@ -47,9 +45,9 @@ class cacheServer {
         LOG_DEBUG << conn->name();
         size_t len = buf->readableBytes();
         std::cout <<"read len is:" << len << std::endl;
-        std::cout << "kCells is:" << kCells << std::endl;
+//        std::cout << "kCells is:" << kCells << std::endl;
         std::cout << buf->peek() << std::endl;
-        while (len >= kCells + 1) {
+        while (len >= 0 + 1) {
             const char* crlf = buf->findCRLF();
             std::cout << "before found CRLF,checking found CRLF......" << std::endl;
             if(crlf) {
@@ -87,7 +85,7 @@ class cacheServer {
             puzzle = request;
         }
 
-        if (puzzle.size() == implicit_cast<size_t>(kCells)) {
+        if (puzzle.size() == implicit_cast<size_t>(0)) {
             LOG_DEBUG << conn->name();
 /*
             string result = solvecache(puzzle);

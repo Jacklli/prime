@@ -72,39 +72,14 @@ CMakeFiles/pricache.dir/server.o.provides: CMakeFiles/pricache.dir/server.o.requ
 
 CMakeFiles/pricache.dir/server.o.provides.build: CMakeFiles/pricache.dir/server.o
 
-CMakeFiles/pricache.dir/sudoku.o: CMakeFiles/pricache.dir/flags.make
-CMakeFiles/pricache.dir/sudoku.o: sudoku.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/pricache/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pricache.dir/sudoku.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pricache.dir/sudoku.o -c /root/prime/examples/pricache/sudoku.cc
-
-CMakeFiles/pricache.dir/sudoku.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pricache.dir/sudoku.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/prime/examples/pricache/sudoku.cc > CMakeFiles/pricache.dir/sudoku.i
-
-CMakeFiles/pricache.dir/sudoku.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pricache.dir/sudoku.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/prime/examples/pricache/sudoku.cc -o CMakeFiles/pricache.dir/sudoku.s
-
-CMakeFiles/pricache.dir/sudoku.o.requires:
-.PHONY : CMakeFiles/pricache.dir/sudoku.o.requires
-
-CMakeFiles/pricache.dir/sudoku.o.provides: CMakeFiles/pricache.dir/sudoku.o.requires
-	$(MAKE) -f CMakeFiles/pricache.dir/build.make CMakeFiles/pricache.dir/sudoku.o.provides.build
-.PHONY : CMakeFiles/pricache.dir/sudoku.o.provides
-
-CMakeFiles/pricache.dir/sudoku.o.provides.build: CMakeFiles/pricache.dir/sudoku.o
-
 # Object files for target pricache
 pricache_OBJECTS = \
-"CMakeFiles/pricache.dir/server.o" \
-"CMakeFiles/pricache.dir/sudoku.o"
+"CMakeFiles/pricache.dir/server.o"
 
 # External object files for target pricache
 pricache_EXTERNAL_OBJECTS =
 
 pricache: CMakeFiles/pricache.dir/server.o
-pricache: CMakeFiles/pricache.dir/sudoku.o
 pricache: CMakeFiles/pricache.dir/build.make
 pricache: libprime_net.a
 pricache: libprime_base.a
@@ -117,7 +92,6 @@ CMakeFiles/pricache.dir/build: pricache
 .PHONY : CMakeFiles/pricache.dir/build
 
 CMakeFiles/pricache.dir/requires: CMakeFiles/pricache.dir/server.o.requires
-CMakeFiles/pricache.dir/requires: CMakeFiles/pricache.dir/sudoku.o.requires
 .PHONY : CMakeFiles/pricache.dir/requires
 
 CMakeFiles/pricache.dir/clean:

@@ -126,8 +126,8 @@ clean: CMakeFiles/prime_net.dir/clean
 # Target rules for target CMakeFiles/sudoku_client.dir
 
 # All Build rule for target.
-CMakeFiles/sudoku_client.dir/all: CMakeFiles/prime_net.dir/all
 CMakeFiles/sudoku_client.dir/all: CMakeFiles/prime_base.dir/all
+CMakeFiles/sudoku_client.dir/all: CMakeFiles/prime_net.dir/all
 	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/depend
 	$(MAKE) -f CMakeFiles/sudoku_client.dir/build.make CMakeFiles/sudoku_client.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles  34 35
@@ -162,8 +162,8 @@ clean: CMakeFiles/sudoku_client.dir/clean
 # Target rules for target CMakeFiles/sudoku_solver_basic.dir
 
 # All Build rule for target.
-CMakeFiles/sudoku_solver_basic.dir/all: CMakeFiles/prime_net.dir/all
 CMakeFiles/sudoku_solver_basic.dir/all: CMakeFiles/prime_base.dir/all
+CMakeFiles/sudoku_solver_basic.dir/all: CMakeFiles/prime_net.dir/all
 	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/depend
 	$(MAKE) -f CMakeFiles/sudoku_solver_basic.dir/build.make CMakeFiles/sudoku_solver_basic.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles  36 37
@@ -198,8 +198,8 @@ clean: CMakeFiles/sudoku_solver_basic.dir/clean
 # Target rules for target CMakeFiles/sudoku_solver_multiloop.dir
 
 # All Build rule for target.
-CMakeFiles/sudoku_solver_multiloop.dir/all: CMakeFiles/prime_net.dir/all
 CMakeFiles/sudoku_solver_multiloop.dir/all: CMakeFiles/prime_base.dir/all
+CMakeFiles/sudoku_solver_multiloop.dir/all: CMakeFiles/prime_net.dir/all
 	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/depend
 	$(MAKE) -f CMakeFiles/sudoku_solver_multiloop.dir/build.make CMakeFiles/sudoku_solver_multiloop.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles  38 39
@@ -234,8 +234,8 @@ clean: CMakeFiles/sudoku_solver_multiloop.dir/clean
 # Target rules for target CMakeFiles/sudoku_solver_threadpool.dir
 
 # All Build rule for target.
-CMakeFiles/sudoku_solver_threadpool.dir/all: CMakeFiles/prime_net.dir/all
 CMakeFiles/sudoku_solver_threadpool.dir/all: CMakeFiles/prime_base.dir/all
+CMakeFiles/sudoku_solver_threadpool.dir/all: CMakeFiles/prime_net.dir/all
 	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/depend
 	$(MAKE) -f CMakeFiles/sudoku_solver_threadpool.dir/build.make CMakeFiles/sudoku_solver_threadpool.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/prime/examples/sudoku/CMakeFiles  40 41
